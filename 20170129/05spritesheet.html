@@ -44,13 +44,21 @@
 
 
             //トゥイーン
-            createjs.Tween.get(vitaminC).wait(3000).call(viWalk).to({x:500},2000).call(viStop);
+            createjs.Tween.get(vitaminC).wait(1000).call(viWalk).to({x:500},2000).call(viStop);
             function viWalk(){
                 vitaminC.gotoAndPlay('walk');
             }
 
             function viStop(){
                 vitaminC.gotoAndPlay('stop');
+            }
+
+            function irWalk(){
+                Iron.gotoAndPlay('walk');
+            }
+
+            function irStop(){
+                Iron.gotoAndPlay('stop');
             }
 
 
