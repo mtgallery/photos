@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>bitmap createjs</title>
+    <title>bitmap preload createjs</title>
 </head>
 <body>
     <canvas id="canvasEl" width="1024" height="768"></canvas>
@@ -19,8 +19,6 @@
         // ステージを作成
         var stage = new createjs.Stage('canvasEl');
 
-
-
         // 画像の場所を配列に保存しておく
         var manifest = ['img/tomato.png','img/greenPepper.png'];
 
@@ -33,21 +31,19 @@
         // 読み込み完了
         loader.addEventListener('complete',addStage);
 
+
         function addStage(){
-            console.log('読み込み完了!');
+            console.log('読み込み完了！');
 
             var tomato = new createjs.Bitmap(manifest[0]);
             stage.addChild(tomato);
             tomato.x = 200;
             tomato.y = 200;
 
-
             var greenPepper = new createjs.Bitmap(manifest[1]);
             stage.addChild(greenPepper);
-            greenPapper.x = 400;
-            greenPapper.y = 300;
-
-
+            greenPepper.x = 400;
+            greenPepper.y = 300;
         }
 
 
