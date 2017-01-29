@@ -43,6 +43,17 @@
             stage.addChild(vitaminC);
 
 
+            //トゥイーン
+            createjs.Tween.get(vitaminC).call(viWalk).to({x:500},2000).call(viStop);
+            function viWalk(){
+                vitaminC.gotoAndPlay('walk');
+            }
+
+            function viStop(){
+                vitaminC.gotoAndPlay('stop');
+            }
+
+
             var IronSprite = new createjs.SpriteSheet(ironSprite);
             var Iron = new createjs.Sprite(IronSprite,'stand');
             stage.addChild(Iron);
