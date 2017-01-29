@@ -51,6 +51,7 @@
 
             function viStop(){
                 vitaminC.gotoAndPlay('stop');
+                createjs.Tween.get(Iron).call(irWalk).to({x:500},2000).call(irStop);
             }
 
             function irWalk(){
