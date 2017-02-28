@@ -81,6 +81,26 @@
     height: 25px;
 }
 
+#title_logo img{
+    width: 387px;
+    height: 307px;
+}
+
+#letter img{
+    width: 171px;
+    height: 29px;
+}
+
+#version img{
+    width: 50px;
+    height: 22px;
+}
+
+#year img{
+    width: 83px;
+    height: 22px;
+}
+
 
 /*---- background ----*/
 
@@ -189,6 +209,34 @@
     left: 615px;
     z-index: 10;
 }
+
+#title_logo{
+    position: absolute;
+    top: 0;
+    left: 140px;
+}
+
+#letter{
+    position: absolute;
+    top: 320px;
+    left: 250px;
+}
+
+#version{
+    position: absolute;
+    top: 332px;
+    left: 80px;
+    z-index: 10;
+}
+
+#year{
+    position: absolute;
+    top: 332px;
+    left: 510px;
+    z-index: 10;
+}
+
+
 
 #sampleViewport{
     position: absolute;
