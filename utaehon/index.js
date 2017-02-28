@@ -333,26 +333,26 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
-	this.frame_47 = function() {
+	this.frame_34 = function() {
 		goto(1);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(47).call(this.frame_47).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(34).call(this.frame_34).wait(1));
 
 	// 文章
 	this.instance_1 = new lib.文章_1();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(171,28.5,1,1,0,0,0,158,15.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({alpha:0.952},0).wait(1).to({alpha:0.905},0).wait(1).to({alpha:0.857},0).wait(1).to({alpha:0.81},0).wait(1).to({alpha:0.762},0).wait(1).to({alpha:0.714},0).wait(1).to({alpha:0.667},0).wait(1).to({alpha:0.619},0).wait(1).to({alpha:0.571},0).wait(1).to({alpha:0.524},0).wait(1).to({alpha:0.476},0).wait(1).to({alpha:0.429},0).wait(1).to({alpha:0.381},0).wait(1).to({alpha:0.333},0).wait(1).to({alpha:0.286},0).wait(1).to({alpha:0.238},0).wait(1).to({alpha:0.19},0).wait(1).to({alpha:0.143},0).wait(1).to({alpha:0.095},0).wait(1).to({alpha:0.048},0).wait(1).to({alpha:0},0).wait(1).to({alpha:0.038},0).wait(1).to({alpha:0.077},0).wait(1).to({alpha:0.115},0).wait(1).to({alpha:0.154},0).wait(1).to({alpha:0.192},0).wait(1).to({alpha:0.231},0).wait(1).to({alpha:0.269},0).wait(1).to({alpha:0.308},0).wait(1).to({alpha:0.346},0).wait(1).to({alpha:0.385},0).wait(1).to({alpha:0.423},0).wait(1).to({alpha:0.462},0).wait(1).to({alpha:0.5},0).wait(1).to({alpha:0.538},0).wait(1).to({alpha:0.577},0).wait(1).to({alpha:0.615},0).wait(1).to({alpha:0.654},0).wait(1).to({alpha:0.692},0).wait(1).to({alpha:0.731},0).wait(1).to({alpha:0.769},0).wait(1).to({alpha:0.808},0).wait(1).to({alpha:0.846},0).wait(1).to({alpha:0.885},0).wait(1).to({alpha:0.923},0).wait(1).to({alpha:0.962},0).wait(1).to({alpha:1},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({alpha:0.933},0).wait(1).to({alpha:0.867},0).wait(1).to({alpha:0.8},0).wait(1).to({alpha:0.733},0).wait(1).to({alpha:0.667},0).wait(1).to({alpha:0.6},0).wait(1).to({alpha:0.533},0).wait(1).to({alpha:0.467},0).wait(1).to({alpha:0.4},0).wait(1).to({alpha:0.333},0).wait(1).to({alpha:0.267},0).wait(1).to({alpha:0.2},0).wait(1).to({alpha:0.133},0).wait(1).to({alpha:0.067},0).wait(1).to({alpha:0},0).wait(1).to({alpha:0.053},0).wait(1).to({alpha:0.105},0).wait(1).to({alpha:0.158},0).wait(1).to({alpha:0.211},0).wait(1).to({alpha:0.263},0).wait(1).to({alpha:0.316},0).wait(1).to({alpha:0.368},0).wait(1).to({alpha:0.421},0).wait(1).to({alpha:0.474},0).wait(1).to({alpha:0.526},0).wait(1).to({alpha:0.579},0).wait(1).to({alpha:0.632},0).wait(1).to({alpha:0.684},0).wait(1).to({alpha:0.737},0).wait(1).to({alpha:0.789},0).wait(1).to({alpha:0.842},0).wait(1).to({alpha:0.895},0).wait(1).to({alpha:0.947},0).wait(1).to({alpha:1},0).wait(1));
 
 	// 文章's Outer Glow
 	this.instance_2 = new lib.文章sOuterGlow_1();
 	this.instance_2.parent = this;
 	this.instance_2.setTransform(171,28.5,1,1,0,0,0,171,28.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({alpha:0.952},0).wait(1).to({alpha:0.905},0).wait(1).to({alpha:0.857},0).wait(1).to({alpha:0.81},0).wait(1).to({alpha:0.762},0).wait(1).to({alpha:0.714},0).wait(1).to({alpha:0.667},0).wait(1).to({alpha:0.619},0).wait(1).to({alpha:0.571},0).wait(1).to({alpha:0.524},0).wait(1).to({alpha:0.476},0).wait(1).to({alpha:0.429},0).wait(1).to({alpha:0.381},0).wait(1).to({alpha:0.333},0).wait(1).to({alpha:0.286},0).wait(1).to({alpha:0.238},0).wait(1).to({alpha:0.19},0).wait(1).to({alpha:0.143},0).wait(1).to({alpha:0.095},0).wait(1).to({alpha:0.048},0).wait(1).to({alpha:0},0).wait(1).to({alpha:0.038},0).wait(1).to({alpha:0.077},0).wait(1).to({alpha:0.115},0).wait(1).to({alpha:0.154},0).wait(1).to({alpha:0.192},0).wait(1).to({alpha:0.231},0).wait(1).to({alpha:0.269},0).wait(1).to({alpha:0.308},0).wait(1).to({alpha:0.346},0).wait(1).to({alpha:0.385},0).wait(1).to({alpha:0.423},0).wait(1).to({alpha:0.462},0).wait(1).to({alpha:0.5},0).wait(1).to({alpha:0.538},0).wait(1).to({alpha:0.577},0).wait(1).to({alpha:0.615},0).wait(1).to({alpha:0.654},0).wait(1).to({alpha:0.692},0).wait(1).to({alpha:0.731},0).wait(1).to({alpha:0.769},0).wait(1).to({alpha:0.808},0).wait(1).to({alpha:0.846},0).wait(1).to({alpha:0.885},0).wait(1).to({alpha:0.923},0).wait(1).to({alpha:0.962},0).wait(1).to({alpha:1},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({alpha:0.933},0).wait(1).to({alpha:0.867},0).wait(1).to({alpha:0.8},0).wait(1).to({alpha:0.733},0).wait(1).to({alpha:0.667},0).wait(1).to({alpha:0.6},0).wait(1).to({alpha:0.533},0).wait(1).to({alpha:0.467},0).wait(1).to({alpha:0.4},0).wait(1).to({alpha:0.333},0).wait(1).to({alpha:0.267},0).wait(1).to({alpha:0.2},0).wait(1).to({alpha:0.133},0).wait(1).to({alpha:0.067},0).wait(1).to({alpha:0},0).wait(1).to({alpha:0.053},0).wait(1).to({alpha:0.105},0).wait(1).to({alpha:0.158},0).wait(1).to({alpha:0.211},0).wait(1).to({alpha:0.263},0).wait(1).to({alpha:0.316},0).wait(1).to({alpha:0.368},0).wait(1).to({alpha:0.421},0).wait(1).to({alpha:0.474},0).wait(1).to({alpha:0.526},0).wait(1).to({alpha:0.579},0).wait(1).to({alpha:0.632},0).wait(1).to({alpha:0.684},0).wait(1).to({alpha:0.737},0).wait(1).to({alpha:0.789},0).wait(1).to({alpha:0.842},0).wait(1).to({alpha:0.895},0).wait(1).to({alpha:0.947},0).wait(1).to({alpha:1},0).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,342,57);
@@ -477,14 +477,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,342,57);
 	// version.png
 	this.instance_1 = new lib.version_3();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(109.1,342.1,0.505,0.512,0,0,0,49.6,21.6);
+	this.instance_1.setTransform(109.1,364.1,0.505,0.512,0,0,0,49.6,21.6);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(48));
 
 	// year.png
 	this.instance_2 = new lib.year_3();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(572.4,341.5,0.503,0.5,0,0,0,82.5,22);
+	this.instance_2.setTransform(552.4,363.5,0.503,0.5,0,0,0,82.5,22);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(48));
 
