@@ -560,14 +560,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,342,57);
 	// version.png
 	this.instance = new lib.version_3();
 	this.instance.parent = this;
-	this.instance.setTransform(222.5,687.5,1,1,0,0,0,49.5,21.5);
+	this.instance.setTransform(222.5,729.1,1,1,0,0,0,49.5,21.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(48));
 
 	// year.png
 	this.instance_1 = new lib.year_3();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(1140.5,686,1,1,0,0,0,82.5,22);
+	this.instance_1.setTransform(1134,727.6,1,1,0,0,0,82.5,22);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(48));
 
