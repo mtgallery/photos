@@ -7,7 +7,7 @@ var loadedGoogleCount = 0;
 var gFontsUpdateCacheList = [];
 var tFontsUpdateCacheList = [];
 lib.ssMetadata = [
-		{name:"index_atlas_", frames: [[0,2600,1334,40],[0,2438,1372,78],[0,2518,1334,80],[0,2318,1372,118],[0,0,1334,750],[0,1504,773,614],[1015,1563,72,15],[775,1563,99,43],[876,1563,137,17],[1119,1537,165,44],[0,2120,1334,196],[0,752,1334,750],[1119,1504,316,31],[775,1504,342,57]]}
+		{name:"index_atlas_", frames: [[0,1848,1334,40],[0,1686,1372,78],[0,1766,1334,80],[0,1566,1372,118],[0,752,773,614],[1475,1563,72,15],[1374,1563,99,43],[1374,1608,137,17],[1654,1563,165,44],[0,0,1334,750],[0,1368,1334,196],[1336,0,344,750],[1336,752,315,750],[1336,1766,316,31],[1336,1504,342,57]]}
 ];
 
 
@@ -99,42 +99,42 @@ lib.tfontAvailable = function(family, totalTypekitCount) {
 
 
 
-(lib.bg3 = function() {
+(lib.title = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.title = function() {
+(lib.version = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.version = function() {
+(lib.versionsOuterGlow = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.versionsOuterGlow = function() {
+(lib.year = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.year = function() {
+(lib.yearsOuterGlow = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.yearsOuterGlow = function() {
+(lib.ベクトルスマートオブジェクトaiアセット = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
@@ -148,23 +148,30 @@ lib.tfontAvailable = function(family, totalTypekitCount) {
 
 
 
-(lib.幕 = function() {
+(lib.幕1 = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.文章 = function() {
+(lib.幕2 = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.文章sOuterGlow = function() {
+(lib.文章 = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.文章sOuterGlow = function() {
+	this.spriteSheet = ss["index_atlas_"];
+	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -183,102 +190,6 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	prototype.frameBounds = frameBounds;
 	return prototype;
 	}
-
-
-(lib.幕_1 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// 幕
-	this.instance = new lib.幕();
-	this.instance.parent = this;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.幕_1, new cjs.Rectangle(0,0,1334,750), null);
-
-
-(lib.垂れ幕_1 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// 垂れ幕
-	this.instance = new lib.垂れ幕();
-	this.instance.parent = this;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.垂れ幕_1, new cjs.Rectangle(0,0,1334,196), null);
-
-
-(lib.文章sOuterGlow_1 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// レイヤー 1
-	this.instance = new lib.文章sOuterGlow();
-	this.instance.parent = this;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.文章sOuterGlow_1, new cjs.Rectangle(0,0,342,57), null);
-
-
-(lib.文章_1 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// レイヤー 1
-	this.instance = new lib.文章();
-	this.instance.parent = this;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.文章_1, new cjs.Rectangle(0,0,316,31), null);
-
-
-(lib.bg2sDropShadow_1 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// レイヤー 1
-	this.instance = new lib.bg2sDropShadow();
-	this.instance.parent = this;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.bg2sDropShadow_1, new cjs.Rectangle(0,0,1372,118), null);
-
-
-(lib.bg1sDropShadow_1 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// レイヤー 1
-	this.instance = new lib.bg1sDropShadow();
-	this.instance.parent = this;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.bg1sDropShadow_1, new cjs.Rectangle(0,0,1372,78), null);
-
-
-(lib.title_1 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// レイヤー 1
-	this.instance = new lib.title();
-	this.instance.parent = this;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.title_1, new cjs.Rectangle(0,0,773,614), null);
-
-
-(lib.bg3_1 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// bg3
-	this.instance = new lib.bg3();
-	this.instance.parent = this;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.bg3_1, new cjs.Rectangle(0,0,1334,750), null);
 
 
 (lib.yearsOuterGlow_1 = function(mode,startPosition,loop) {
@@ -329,73 +240,100 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 }).prototype = getMCSymbolPrototype(lib.version_1, new cjs.Rectangle(0,0,72,15), null);
 
 
-(lib.文章_2 = function(mode,startPosition,loop) {
+(lib.title_1 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_34 = function() {
-		goto(1);
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(34).call(this.frame_34).wait(1));
-
-	// 文章
-	this.instance_1 = new lib.文章_1();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(171,28.5,1,1,0,0,0,158,15.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({alpha:0.933},0).wait(1).to({alpha:0.867},0).wait(1).to({alpha:0.8},0).wait(1).to({alpha:0.733},0).wait(1).to({alpha:0.667},0).wait(1).to({alpha:0.6},0).wait(1).to({alpha:0.533},0).wait(1).to({alpha:0.467},0).wait(1).to({alpha:0.4},0).wait(1).to({alpha:0.333},0).wait(1).to({alpha:0.267},0).wait(1).to({alpha:0.2},0).wait(1).to({alpha:0.133},0).wait(1).to({alpha:0.067},0).wait(1).to({alpha:0},0).wait(1).to({alpha:0.053},0).wait(1).to({alpha:0.105},0).wait(1).to({alpha:0.158},0).wait(1).to({alpha:0.211},0).wait(1).to({alpha:0.263},0).wait(1).to({alpha:0.316},0).wait(1).to({alpha:0.368},0).wait(1).to({alpha:0.421},0).wait(1).to({alpha:0.474},0).wait(1).to({alpha:0.526},0).wait(1).to({alpha:0.579},0).wait(1).to({alpha:0.632},0).wait(1).to({alpha:0.684},0).wait(1).to({alpha:0.737},0).wait(1).to({alpha:0.789},0).wait(1).to({alpha:0.842},0).wait(1).to({alpha:0.895},0).wait(1).to({alpha:0.947},0).wait(1).to({alpha:1},0).wait(1));
-
-	// 文章's Outer Glow
-	this.instance_2 = new lib.文章sOuterGlow_1();
-	this.instance_2.parent = this;
-	this.instance_2.setTransform(171,28.5,1,1,0,0,0,171,28.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({alpha:0.933},0).wait(1).to({alpha:0.867},0).wait(1).to({alpha:0.8},0).wait(1).to({alpha:0.733},0).wait(1).to({alpha:0.667},0).wait(1).to({alpha:0.6},0).wait(1).to({alpha:0.533},0).wait(1).to({alpha:0.467},0).wait(1).to({alpha:0.4},0).wait(1).to({alpha:0.333},0).wait(1).to({alpha:0.267},0).wait(1).to({alpha:0.2},0).wait(1).to({alpha:0.133},0).wait(1).to({alpha:0.067},0).wait(1).to({alpha:0},0).wait(1).to({alpha:0.053},0).wait(1).to({alpha:0.105},0).wait(1).to({alpha:0.158},0).wait(1).to({alpha:0.211},0).wait(1).to({alpha:0.263},0).wait(1).to({alpha:0.316},0).wait(1).to({alpha:0.368},0).wait(1).to({alpha:0.421},0).wait(1).to({alpha:0.474},0).wait(1).to({alpha:0.526},0).wait(1).to({alpha:0.579},0).wait(1).to({alpha:0.632},0).wait(1).to({alpha:0.684},0).wait(1).to({alpha:0.737},0).wait(1).to({alpha:0.789},0).wait(1).to({alpha:0.842},0).wait(1).to({alpha:0.895},0).wait(1).to({alpha:0.947},0).wait(1).to({alpha:1},0).wait(1));
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,342,57);
-
-
-(lib.bg2_1 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// bg2
-	this.instance = new lib.bg2();
+	// レイヤー 1
+	this.instance = new lib.title();
 	this.instance.parent = this;
-	this.instance.setTransform(19,22);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-	// bg2's Drop Shadow
-	this.instance_1 = new lib.bg2sDropShadow_1();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(686,59,1,1,0,0,0,686,59);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.bg2_1, new cjs.Rectangle(0,0,1372,118), null);
+}).prototype = getMCSymbolPrototype(lib.title_1, new cjs.Rectangle(0,0,773,614), null);
 
 
-(lib.bg1_1 = function(mode,startPosition,loop) {
+(lib.垂れ幕_1 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// bg1
-	this.instance = new lib.bg1();
+	// 垂れ幕
+	this.instance = new lib.垂れ幕();
 	this.instance.parent = this;
-	this.instance.setTransform(19,24);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-	// bg1's Drop Shadow
-	this.instance_1 = new lib.bg1sDropShadow_1();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(686,39,1,1,0,0,0,686,39);
+}).prototype = getMCSymbolPrototype(lib.垂れ幕_1, new cjs.Rectangle(0,0,1334,196), null);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.bg1_1, new cjs.Rectangle(0,0,1372,78), null);
+(lib.幕1_1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 幕1
+	this.instance = new lib.幕1();
+	this.instance.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.幕1_1, new cjs.Rectangle(0,0,344,750), null);
+
+
+(lib.幕2_1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 幕2
+	this.instance = new lib.幕2();
+	this.instance.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.幕2_1, new cjs.Rectangle(0,0,315,750), null);
+
+
+(lib.文章sOuterGlow_1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// レイヤー 1
+	this.instance = new lib.文章sOuterGlow();
+	this.instance.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.文章sOuterGlow_1, new cjs.Rectangle(0,0,342,57), null);
+
+
+(lib.文章_1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// レイヤー 1
+	this.instance = new lib.文章();
+	this.instance.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.文章_1, new cjs.Rectangle(0,0,316,31), null);
+
+
+(lib.bg2sDropShadow_1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// レイヤー 1
+	this.instance = new lib.bg2sDropShadow();
+	this.instance.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.bg2sDropShadow_1, new cjs.Rectangle(0,0,1372,118), null);
+
+
+(lib.bg1sDropShadow_1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// レイヤー 1
+	this.instance = new lib.bg1sDropShadow();
+	this.instance.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.bg1sDropShadow_1, new cjs.Rectangle(0,0,1372,78), null);
 
 
 (lib.year_2 = function(mode,startPosition,loop) {
@@ -438,6 +376,158 @@ p.nominalBounds = new cjs.Rectangle(0,0,342,57);
 }).prototype = getMCSymbolPrototype(lib.version_2, new cjs.Rectangle(0,0,99,43), null);
 
 
+(lib.title_2 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// title
+	this.instance = new lib.title_1();
+	this.instance.parent = this;
+	this.instance.setTransform(386.5,307,1,1,0,0,0,386.5,307);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.title_2, new cjs.Rectangle(0,0,773,614), null);
+
+
+(lib.maku1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 垂れ幕
+	this.instance = new lib.垂れ幕_1();
+	this.instance.parent = this;
+	this.instance.setTransform(667,98,1,1,0,0,0,667,98);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.maku1, new cjs.Rectangle(0,0,1334,196), null);
+
+
+(lib.maku_right = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 幕1
+	this.instance = new lib.幕1_1();
+	this.instance.parent = this;
+	this.instance.setTransform(172,375,1,1,0,0,0,172,375);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.maku_right, new cjs.Rectangle(0,0,344,750), null);
+
+
+(lib.maku_left = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 幕2
+	this.instance = new lib.幕2_1();
+	this.instance.parent = this;
+	this.instance.setTransform(157.5,375,1,1,0,0,0,157.5,375);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.maku_left, new cjs.Rectangle(0,0,315,750), null);
+
+
+(lib.文章_2 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 文章
+	this.instance_1 = new lib.文章_1();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(171,28.5,1,1,0,0,0,158,15.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
+
+	// 文章's Outer Glow
+	this.instance_2 = new lib.文章sOuterGlow_1();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(171,28.5,1,1,0,0,0,171,28.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.文章_2, new cjs.Rectangle(0,0,342,57), null);
+
+
+(lib.letter = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// 文章
+	this.instance = new lib.文章_2();
+	this.instance.parent = this;
+	this.instance.setTransform(171,28.5,1,1,0,0,0,171,28.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({alpha:0.957},0).wait(1).to({alpha:0.913},0).wait(1).to({alpha:0.87},0).wait(1).to({alpha:0.826},0).wait(1).to({alpha:0.783},0).wait(1).to({alpha:0.739},0).wait(1).to({alpha:0.696},0).wait(1).to({alpha:0.652},0).wait(1).to({alpha:0.609},0).wait(1).to({alpha:0.565},0).wait(1).to({alpha:0.522},0).wait(1).to({alpha:0.478},0).wait(1).to({alpha:0.435},0).wait(1).to({alpha:0.391},0).wait(1).to({alpha:0.348},0).wait(1).to({alpha:0.304},0).wait(1).to({alpha:0.261},0).wait(1).to({alpha:0.217},0).wait(1).to({alpha:0.174},0).wait(1).to({alpha:0.13},0).wait(1).to({alpha:0.087},0).wait(1).to({alpha:0.043},0).wait(1).to({alpha:0},0).wait(1).to({alpha:0.042},0).wait(1).to({alpha:0.083},0).wait(1).to({alpha:0.125},0).wait(1).to({alpha:0.167},0).wait(1).to({alpha:0.208},0).wait(1).to({alpha:0.25},0).wait(1).to({alpha:0.292},0).wait(1).to({alpha:0.333},0).wait(1).to({alpha:0.375},0).wait(1).to({alpha:0.417},0).wait(1).to({alpha:0.458},0).wait(1).to({alpha:0.5},0).wait(1).to({alpha:0.542},0).wait(1).to({alpha:0.583},0).wait(1).to({alpha:0.625},0).wait(1).to({alpha:0.667},0).wait(1).to({alpha:0.708},0).wait(1).to({alpha:0.75},0).wait(1).to({alpha:0.792},0).wait(1).to({alpha:0.833},0).wait(1).to({alpha:0.875},0).wait(1).to({alpha:0.917},0).wait(1).to({alpha:0.958},0).wait(1).to({alpha:1},0).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,342,57);
+
+
+(lib.bg2コピー = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// bg2
+	this.instance = new lib.bg2();
+	this.instance.parent = this;
+	this.instance.setTransform(19,22);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	// bg2's Drop Shadow
+	this.instance_1 = new lib.bg2sDropShadow_1();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(686,59,1,1,0,0,0,686,59);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.bg2コピー, new cjs.Rectangle(0,0,1372,118), null);
+
+
+(lib.bg2_1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// bg2
+	this.instance = new lib.bg2コピー();
+	this.instance.parent = this;
+	this.instance.setTransform(686,59,1,1,0,0,0,686,59);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.bg2_1, new cjs.Rectangle(0,0,1372,118), null);
+
+
+(lib.bg1コピー = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// bg1
+	this.instance = new lib.bg1();
+	this.instance.parent = this;
+	this.instance.setTransform(19,24);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	// bg1's Drop Shadow
+	this.instance_1 = new lib.bg1sDropShadow_1();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(686,39,1,1,0,0,0,686,39);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.bg1コピー, new cjs.Rectangle(0,0,1372,78), null);
+
+
+(lib.bg1_1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// bg1
+	this.instance = new lib.bg1コピー();
+	this.instance.parent = this;
+	this.instance.setTransform(686,39,1,1,0,0,0,686,39);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.bg1_1, new cjs.Rectangle(0,0,1372,78), null);
+
+
 (lib.year_3 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -464,84 +554,91 @@ p.nominalBounds = new cjs.Rectangle(0,0,342,57);
 }).prototype = getMCSymbolPrototype(lib.version_3, new cjs.Rectangle(0,0,99,43), null);
 
 
-(lib.start = function(mode,startPosition,loop) {
+(lib.start_1 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// 文章
-	this.instance = new lib.文章_2();
+	// version.png
+	this.instance = new lib.version_3();
 	this.instance.parent = this;
-	this.instance.setTransform(342.5,332.3,0.5,0.5,0,0,0,171,28.5);
+	this.instance.setTransform(222.5,687.5,1,1,0,0,0,49.5,21.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(48));
 
-	// version.png
-	this.instance_1 = new lib.version_3();
+	// year.png
+	this.instance_1 = new lib.year_3();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(109.1,364.1,0.505,0.512,0,0,0,49.6,21.6);
+	this.instance_1.setTransform(1140.5,686,1,1,0,0,0,82.5,22);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(48));
 
-	// year.png
-	this.instance_2 = new lib.year_3();
+	// letter.png
+	this.instance_2 = new lib.letter();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(552.4,363.5,0.503,0.5,0,0,0,82.5,22);
+	this.instance_2.setTransform(514,636);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(48));
 
-	// 垂れ幕
-	this.instance_3 = new lib.垂れ幕_1();
+	// maku1
+	this.instance_3 = new lib.maku1();
 	this.instance_3.parent = this;
-	this.instance_3.setTransform(343,49,0.5,0.5,0,0,0,667,98);
+	this.instance_3.setTransform(686,98,1,1,0,0,0,667,98);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(48));
 
-	// title
-	this.instance_4 = new lib.title_1();
+	// title.png
+	this.instance_4 = new lib.title_2();
 	this.instance_4.parent = this;
-	this.instance_4.setTransform(342.8,153.5,0.5,0.5,0,0,0,386.5,307);
+	this.instance_4.setTransform(685.5,307,1,1,0,0,0,386.5,307);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(48));
 
-	// 幕
-	this.instance_5 = new lib.幕_1();
+	// maku_left.png
+	this.instance_5 = new lib.maku_left();
 	this.instance_5.parent = this;
-	this.instance_5.setTransform(343,187.5,0.5,0.5,0,0,0,667,375);
+	this.instance_5.setTransform(176.5,375,1,1,0,0,0,157.5,375);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(48));
 
-	// bg1
-	this.instance_6 = new lib.bg1_1();
+	// maku_right.png
+	this.instance_6 = new lib.maku_right();
 	this.instance_6.parent = this;
-	this.instance_6.setTransform(343,362.5,0.5,0.5,0,0,0,686,39);
+	this.instance_6.setTransform(1181,375,1,1,0,0,0,172,375);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(48));
 
-	// bg2
-	this.instance_7 = new lib.bg2_1();
+	// bg1
+	this.instance_7 = new lib.bg1_1();
 	this.instance_7.parent = this;
-	this.instance_7.setTransform(343,333.5,0.5,0.5,0,0,0,686,59);
+	this.instance_7.setTransform(686,725,1,1,0,0,0,686,39);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(48));
 
-	// bg3
-	this.instance_8 = new lib.bg3_1();
+	// bg2
+	this.instance_8 = new lib.bg2_1();
 	this.instance_8.parent = this;
-	this.instance_8.setTransform(343,187.5,0.5,0.5,0,0,0,667,375);
+	this.instance_8.setTransform(686,667,1,1,0,0,0,686,59);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(48));
 
+	// bg3
+	this.instance_9 = new lib.ベクトルスマートオブジェクトaiアセット();
+	this.instance_9.parent = this;
+	this.instance_9.setTransform(19,0);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(48));
+
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,686,382);
+p.nominalBounds = new cjs.Rectangle(0,0,1372,764);
 
 
 // stage content:
-(lib.start667375 = function(mode,startPosition,loop) {
+(lib.start = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// startScreen2.psd
-	this.instance = new lib.start();
+	// startScreen.psd
+	this.instance = new lib.start_1();
 	this.instance.parent = this;
-	this.instance.setTransform(333.5,191,1,1,0,0,0,343,191);
+	this.instance.setTransform(333.5,191,0.5,0.5,0,0,0,686,382);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
@@ -552,7 +649,7 @@ lib.properties = {
 	width: 667,
 	height: 375,
 	fps: 24,
-	color: "#FFFFFF",
+	color: "#424242",
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
