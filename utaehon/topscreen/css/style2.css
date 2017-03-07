@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+
+#main{
+    width: 667px;
+    height: 375px;
+    overflow: hidden;
+}
+
+/*.all img{
+    width: 50%;
+    height: 50%;
+}*/
+
+/*---- images size ----*/
+
+#bg_main img{
+    width: 667px;
+    height: 375px;
+}
+
+#bg1 img{
+    width: 667px;
+    height: 31px;
+}
+
+#bg2 img{
+    width: 667px;
+    height: 59px;
+}
+
+#maku1 img{
+    width: 667px;
+    height: 98px;
+}
+
+#maku_right img{
+    width: 177px;
+    height: 375px;
+}
+
+#maku_left img{
+    width: 158px;
+    height: 375px;
+}
+
+#hurudokei img{
+    width: 163px;
+    height: 170px;
+}
+
+#morikuma img{
+    width: 163px;
+    height: 170px;
+}
+
+#inunoomawari img{
+    width: 163px;
+    height: 170px;
+}
+
+#select img{
+    width: 154px;
+    height: 35px;
+}
+
+#add_song img{
+    width: 31px;
+    height: 34px;
+}
+
+#song_num img{
+    width: 41px;
+    height: 22px;
+}
+
+#how_to img{
+    width: 20px;
+    height: 36px;
+}
+
+#sound_on img{
+    width: 40px;
+    height: 25px;
+}
+
+
+/*---- background ----*/
+
+#bg_main{
+    position: relative;
+}
+
+#bg1{
+    position: absolute;
+    top: 344px;
+    z-index: 9;
+}
+
+#bg2{
+    position: absolute;
+    top: 304px;
+}
+
+#maku1{
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+}
+
+#maku_right{
+    position: absolute;
+    top: 0;
+    left: 490px;
+    z-index: 9;
+}
+
+#maku_left{
+    position: absolute;
+    top: 0px;
+    z-index: 9;
+}
+
+
+/*---- songlist ----*/
+
+
+
+/*---- option_btn ----*/
+
+#select{
+    position: absolute;
+    top: 25px;
+    z-index: 10;
+    left: 259px;
+}
+
+#add_song{
+    position: absolute;
+    top: 323px;
+    left: 10px;
+    z-index: 10;
+}
+
+#song_num{
+    position: absolute;
+    top: 325px;
+    left: 310px;
+    z-index: 10;
+}
+
+#how_to{
+    position: absolute;
+    top: 273px;
+    left: 630px;
+    z-index: 10;
+}
+
+#sound_on{
+    position: absolute;
+    top: 333px;
+    left: 615px;
+    z-index: 10;
+}
+
+
+.viewpoint #song_list{
+    position: relative;
+}
+
+.viewport {
+    width: 325px;
+    overflow: hidden;
+    margin: 0 auto;
+    -webkit-transform: translateZ(0); /* Optional: When heavy at iOS6+ */
+}
+
+#contents{
+    position: absolute;
+    top: 125px;
+    z-index: 10;
+}
+
+.flipsnap {
+    width: 975px; /* 320px(item width) * 3(item count) */
+}
+
+.flipsnap:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.item {
+    float: left;
+    margin-right: 89px;
+}
