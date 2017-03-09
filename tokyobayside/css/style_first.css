@@ -1,0 +1,521 @@
+@font-face {
+    font-family: "a-otf-gothic-bbb-pr6n",sans-serif;
+}
+
+body{
+    font-family:"ヒラギノ明朝 Pro W6", "ヒラギノ明朝 Pro W3", "Helvetica Light Oblique", "Helvetica Regular", serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+a:link,a:visited{
+    color: #212121;
+    text-decoration: none;
+}
+a:hover,a:active{
+    color: #2b9fd9;
+    text-decoration: none;
+}
+
+
+/* header */
+
+header{
+    width: 100%;
+    height: 85px;
+    background-color: rgba(255,255,255,0.8);
+    position: fixed;
+    z-index: 10;
+}
+
+header .wrapper{
+    width: 100%;
+    height: 85px;
+    font-family: "a-otf-gothic-bbb-pr6n";
+    display: flex;
+    align-items: center;
+}
+
+header h1{
+    margin: 0 10px;
+}
+
+header nav{
+    width: 758px;
+    height: 85px;
+    border-right: #bdbdbd solid 1px;
+    border-left: #bdbdbd solid 1px;
+    margin-right: 20px;
+}
+
+header nav ul{
+    height: 85px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav li{
+    width: 150px;
+}
+
+header nav li:not(:last-child){
+    border-right: #bdbdbd solid 1px;
+}
+
+header nav li span{
+    font-size: 10px;
+    font-weight: normal;
+    display: block;
+    padding-bottom: 5px;
+}
+
+#reserve_btn{
+    width: 240px;
+    height: 85px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+header figure{
+    margin-bottom: 5px;
+}
+
+header p{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+header p span{
+    font-family:"ヒラギノ明朝 Pro W6", "ヒラギノ明朝 Pro W3", "Helvetica Light Oblique", "Helvetica Regular", serif;
+    font-size: 11px;
+}
+
+
+/* mv-contents */
+
+/*背景画像の設定をする*/
+#mv-contents{
+    height: 700px;
+    background: url(../img/mv_restaurant.jpg)center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;/*ブラー効果でボヤけた部分を非表示*/
+}
+
+#mv-contents:before{
+  content: '';
+  background: inherit;/*.bgImageで設定した背景画像を継承する*/
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;/*重なり順序を一番下にしておく*/
+}
+
+#contentsPlan{
+    position: absolute;
+    top:160px;
+    left:120px;
+}
+
+#contentsRestaurant{
+    position: absolute;
+    top:135px;
+    left:300px;
+    z-index: 5;
+}
+
+#contentsStay{
+    position: absolute;
+    top:160px;
+    left:480px;
+    z-index: 3;
+}
+
+#contentsWedding{
+    position: absolute;
+    top:160px;
+    left:660px;
+    z-index: 2;
+}
+
+#contentsSightseeing{
+    position: absolute;
+    top:160px;
+    left:840px;
+    z-index: 1;
+}
+
+#switch1{
+    position: absolute;
+    top:663px;
+    left:500px;
+}
+
+#switch2{
+    position: absolute;
+    top:663px;
+    left:545px;
+}
+
+#switch3{
+    position: absolute;
+    top:663px;
+    left:590px;
+}
+
+#switch4{
+    position: absolute;
+    top:663px;
+    left:635px;
+}
+
+#switch5{
+    position: absolute;
+    top:663px;
+    left:680px;
+}
+
+
+/* search-box */
+
+.search-box{
+    width: 100%;
+    height: 100px;
+    background-color: #fdfcf1;
+    font-family: "a-otf-gothic-bbb-pr6n", sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.search-box .wrapper{
+    height: 100px;
+    margin: 0 25px;
+    font-family: "a-otf-gothic-bbb-pr6n", sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-box .wrapper h2{
+    width: 165px;
+    background: url(../img/bag_icon.png) no-repeat center top;
+    /*margin-right: 30px;*/
+    padding-top: 35px;
+    font-family: "a-otf-gothic-bbb-pr6n", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.search-box .wrap_check{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    /*margin-right: 50px;*/
+}
+
+.search-box .wrap_number{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    /*margin-right: 35px;*/
+}
+
+.search-box ul.date{
+    width: 390px;
+    display: flex;
+}
+
+.search-box ul.date p{
+    margin-bottom: 5px;
+}
+
+.search-box ul.number{
+    width: 190px;
+    display: flex;
+}
+
+.search-box ul.number p{
+    padding-bottom: 6px;
+}
+
+.search-box li{
+    position: relative;
+    display: block;
+}
+
+.search-box li p{
+    letter-spacing: 2px;
+}
+
+.search-box li span{
+    vertical-align: middle;
+	padding-left: 5px;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+.search-box li.checkin{
+    padding-right: 90px;
+}
+
+.search-box li.checkin p{
+	display: inline-block;
+	padding-left: 27px;
+	background: url(../img/checkin_date.png) no-repeat left center;
+}
+
+.search-box .check_date{
+    width: 146px;
+    height: 26px;
+    font-size: 14px;
+    text-align: center;
+    border: #212121 solid 1px;
+}
+
+.search-box li.checkin:after {
+	display: block;
+	position: absolute;
+	bottom: 9px;
+	right: 31px;
+	content: ' ';
+	width: 25px;
+	height: 8px;
+	background: url(../img/allow1.png) no-repeat left center;
+}
+
+.search-box li.checkout p{
+	display: inline-block;
+	padding-left: 27px;
+	background: url(../img/checkout_date.png) no-repeat left center;
+}
+
+.search-box li.person {
+	margin-right: 25px;
+}
+
+.search-box li.room p{
+    padding-left: 3px;
+}
+
+.search-box li.room:after {
+	display: block;
+	position: absolute;
+	bottom:11.5px;
+	right: -23px;
+	content: ' ';
+	width: 5px;
+	height: 8px;
+	background: url(../img/allow2.png) no-repeat left center;
+}
+
+.search-box .search_btn{
+    width: 251px;
+    height: 100px;
+    padding-top: 40px;
+}
+
+.search-box .search_btn input{
+    margin-bottom: 5px;
+}
+
+.mycheck{
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.mycheck a{
+    display: inline-block;
+	padding-left: 20px;
+	background: url(../img/allow2.png) no-repeat left center;
+}
+
+
+/* main contents*/
+
+.inner{
+    width: 100%;
+    font-family: "a-otf-gothic-bbb-pr6n",sans-serif;
+    font-style: normal;
+    background-color: #f2f2f2;
+    padding: 60px 0px;
+    text-align: center;
+}
+
+.main_contents{
+    margin: 0 auto;
+}
+
+#main_upper{
+    height: 440px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+#main_upper h2{
+    font-family: "a-otf-gothic-bbb-pr6n",sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 20px 0 15px;
+}
+
+#main_upper p{
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 16px;
+}
+
+#main_lower{
+    height: 410px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+#main_lower h2{
+    font-family: "a-otf-gothic-bbb-pr6n",sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    /*letter-spacing: 2px;*/
+    padding: 16px 0 12px;
+}
+
+#main_lower p{
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: 13px;
+}
+
+#main_plan{
+    width: 550px;
+    height: 440px;
+    background-color: #fff;
+}
+
+#main_restaurant{
+    width: 550px;
+    height: 440px;
+    background-color: #fff;
+}
+
+#main_stay{
+    width: 350px;
+    height: 410px;
+    background-color: #fff;
+}
+
+#main_wedding{
+    width: 350px;
+    height: 410px;
+    background-color: #fff;
+}
+
+#main_sightseeing{
+    width: 350px;
+    height: 410px;
+    background-color: #fff;
+}
+
+/* Topic */
+
+#topics h2{
+    height: 100px;
+    background-color: #fff;
+    font-family: "a-otf-gothic-bbb-pr6n",sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+#topicsList{
+    height: 250px;
+    display: flex;
+    margin: 0 90px 50px;
+}
+
+#topicsList li{
+    position: relative;
+}
+
+#topicsList li:not(:last-child){
+    margin-right: 15px;
+}
+
+#topicsList li#plan1:after {
+	display: block;
+	position: absolute;
+	bottom: 100px;
+	right: 340px;
+	content: ' ';
+	width: 50px;
+	height: 50px;
+	background: url(../img/Topics_allow1.png) no-repeat left center;
+}
+
+#topicsList li#plan3:before {
+	display: block;
+	position: absolute;
+	bottom: 100px;
+	right: -60px;
+	content: ' ';
+	width: 50px;
+	height: 50px;
+	background: url(../img/Topics_allow2.png) no-repeat left center;
+}
+
+/* footer */
+
+
+
+
+
+/*#page-top-pc {
+	position: fixed;
+    bottom: 40px;
+    right: 30px;
+    font-size: 77%;
+	line-height: 1.4;
+	z-index: 9999;
+}
+#page-top-pc a {
+    background: #8C6967;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 25px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+	filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+#page-top-pc a:hover {
+    text-decoration: none;
+    background: #432331;
+}
+#page-top-pc a span {
+	background-image: url(../img/allow2.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	display: block;
+	height: 12px;
+}*/

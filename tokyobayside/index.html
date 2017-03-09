@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TokyoBaysideHotel〜東京ベイサイドホテル〜</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- header　start -->
+    <header>
+        <div class="wrapper">
+            <section class="top_menu">
+                <h1><a href="#"><img src="img/logo.png" width="186" height="39" alt="TokyoBaysideHotel"></a></h1>
+
+                <nav>
+                    <ul>
+                        <li class="headPlan"><a href="#main_plan">プラン<br /><span>Plan</span></a></li>
+                        <li class="headRestaurant"><a href="#main_restaurant">レストラン<br /><span>Restaurant</span></a></li>
+                        <li class="headStay"><a href="#main_stay">ご宿泊<br /><span>Stay</span></a></li>
+                        <li class="headWedding"><a href="#main_wedding">ウェディング<br /><span>Wedding</span></a></li>
+                        <li class="headSpot"><a href="#main_sightseeing">周辺ガイド<br /><span>Sightseeing Spots</span></a></li>
+                    </ul>
+                </nav>
+
+                <div id="reserve_btn">
+                    <figure>
+                        <a href="#"><img src="img/reservation_button.png" width="191" height="43" alt="宿泊予約"></a>
+                    </figure>
+                    <p>ご予約・お問い合わせ <span>0742-26-3300</span></p>
+                </div>
+            </section>
+        </div>
+    </header>
+    <!-- header　end -->
+
+    <!--main visual start-->
+    <div id="mv-contents">
+    <!--main visual contents_mv start-->
+        <div id="contents">
+            <ul>
+                <li id="contentsPlan"><a href="#"><img src="img/Plan_mv.png" alt="Plan_mv"></a></li>
+                <li id="contentsRestaurant"><a href="#"><img src="img/Restaurant_mv.png" alt="Restaurant_mv"></a></li>
+                <li id="contentsStay"><a href="#"><img src="img/Stay_mv.png" alt="Stay_mv"></a></li>
+                <li id="contentsWedding"><a href="#"><img src="img/Wedding_mv.png" alt="Wedding_mv"></a></li>
+                <li id="contentsSightseeing"><a href="#"><img src="img/Sightseeing_Spots_mv.png" alt="Sightseeing_Spots_mv"></a></li>
+            </ul>
+        </div>
+        <div id="switch">
+            <ul>
+                <li id="switch1"><img src="img/switch_off.png" alt="プラン"></li>
+                <li id="switch2"><img src="img/switch_current.png" alt="レストラン"></li>
+                <li id="switch3"><img src="img/switch_off.png" alt="ご宿泊"></li>
+                <li id="switch4"><img src="img/switch_off.png" alt="ウェディング"></li>
+                <li id="switch5"><img src="img/switch_off.png" alt="周辺ガイド"></li>
+            </ul>
+        </div>
+    </div>
+    <!--main visual contents_mv end-->
+    <!--main visual end-->
+
+    <!-- search-box start -->
+    <div class="search-box">
+        <!-- <form method="get" name="search_form" class="ihonex" action="#" target="_blank"> -->
+            <!-- <input type="hidden" class="chkin_yy" name="chkin_yy" value="">
+                    <input type="hidden" class="chkin_mm" name="chkin_mm" value="">
+                    <input type="hidden" class="chkin_dd" name="chkin_dd" value="">
+                    <input type="hidden" class="chkout_yy" name="chkout_yy" value="">
+                    <input type="hidden" class="chkout_mm" name="chkout_mm" value="">
+                    <input type="hidden" class="chkout_dd" name="chkout_dd" value=""> -->
+
+            <section class="inner-box">
+                <h2>日付から空室を検索</h2>
+
+                <div class="wrap_check">
+                    <ul class="date">
+                        <li class="checkin">
+                            <p>チェックイン日</p>
+                            <input type="text" class="check_date" name="checkin1" value="" placeholder="12/21" readonly>
+                        </li>
+                        <li class="checkout">
+                            <p>チェックアウト日</p>
+                            <input type="text" class="check_date" name="checkin1" value="" placeholder="12/22" readonly>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrap_number">
+                    <ul class="number">
+                        <li class="person">
+                            <p>ご利用人数</p>
+                            <select name="search:num">
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <span>名</span>
+                        </li>
+                        <li class="room">
+                            <p>お部屋数</p>
+                            <select name="rooms">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <span>室</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="search_btn">
+                    <p><input type="image" src="img/search_button.png" name="search_submit" alt="検索する"></p>
+                    <p class="mycheck"><a href="#">ご予約の確認・キャンセル</a></p>
+                </div>
+            </section>
+        <!-- </form> -->
+    </div>
+    <!-- search-box end -->
+
+    <!-- main contents start -->
+    <div class="main_contents">
+        <div class="inner">
+            <div id="main_upper">
+                <section id="main_plan">
+                    <figure><a href="#"><img src="img/Plan_contents.png" width="550" height="250" alt="プラン"></a></figure>
+                    <h2>特別なひとときを過ごす</h2>
+                    <p>お誕生日や結婚記念日など、カップルに素敵な記念日がたくさん！<br />
+                        大切な人と記憶に残るプランを提供いたします。</p>
+
+                    <p><a href="#"><img src="img/Detail_button.png" width="150" height="34" alt="詳細はこちら"></a></p>
+                </section>
+
+                <section id="main_restaurant">
+                    <figure><a href="#"><img src="img/Restaurant_contents.png" width="550" height="250" alt="レストラン"></a></figure>
+                    <h2>至福の料理を味わう</h2>
+                    <p>一流のシェフが至福の料理を提供いたします。<br />
+                        記念日にワンランク上の料理を堪能。</p>
+
+                    <p><a href="#"><img src="img/Detail_button.png" width="150" height="34" alt="詳細はこちら"></a></p>
+                </section>
+            </div>
+
+            <div id="main_lower">
+                <section id="main_stay">
+                    <figure><a href="#"><img src="img/Stay_contents.png" width="350" height="250" alt="ご宿泊"></a></figure>
+                    <h2>オーシャンビューを楽しむ</h2>
+                    <p>お部屋から東京湾を眺めながら、<br />
+                        素敵な景観をお楽しみください。</p>
+
+                    <p><a href="#"><img src="img/Detail_button.png" width="150" height="34" alt="詳細はこちら"></a></p>
+                </section>
+
+                <section id="main_wedding">
+                    <figure><a href="#"><img src="img/Wedding_contents.png" width="350" height="250" alt="ウェディング"></a></figure>
+                    <h2>おふたりの特別な物語を</h2>
+                    <p>最良の環境を整え、一から丁寧に作り上げる<br />
+                        ウェディングを提供いたします。</p>
+
+                    <p><a href="#"><img src="img/Detail_button.png" width="150" height="34" alt="詳細はこちら"></a></p>
+                </section>
+
+                <section id="main_sightseeing">
+                    <figure><a href="#"><img src="img/Sightseeing_contents.png" width="350" height="250" alt="周辺ガイド"></a></figure>
+                    <h2>エンターテイメントをお届け</h2>
+                    <p>ホテル周辺にはショッピング<br />
+                        レジャースポットが数多くございます。</p>
+
+                    <p><a href="#"><img src="img/Detail_button.png" width="150" height="34" alt="詳細はこちら"></a></p>
+                </section>
+            </div>
+        </div>
+        <!-- main contents end -->
+
+        <!-- Topics start -->
+        <div id="topics">
+            <section id="title">
+                <h2>Topics</h2>
+            </section>
+
+            <div class="main_contents">
+                <ul id="topicsList">
+                    <li id="plan1"><img src="img/Plan_1.png" width="330" height="250" alt="プラン１"></li>
+                    <li id="plan2"><img src="img/Plan_2.png" width="330" height="250" alt="プラン２"></li>
+                    <li id="plan3"><img src="img/Plan_3.png" width="330" height="250" alt="プラン３"></li>
+                </ul>
+            </div>
+
+            <p><a href="#"><img src="img/Detail_button2.png" width="180" height="40" alt="一覧はこちら"></a></p>
+        </div>
+    </div>
+    <!-- Topics end -->
+
+    <!-- search-box start -->
+    <div class="search-box">
+        <!-- <form method="get" name="search_form" class="ihonex" action="#" target="_blank"> -->
+            <!-- <input type="hidden" class="chkin_yy" name="chkin_yy" value="">
+                    <input type="hidden" class="chkin_mm" name="chkin_mm" value="">
+                    <input type="hidden" class="chkin_dd" name="chkin_dd" value="">
+                    <input type="hidden" class="chkout_yy" name="chkout_yy" value="">
+                    <input type="hidden" class="chkout_mm" name="chkout_mm" value="">
+                    <input type="hidden" class="chkout_dd" name="chkout_dd" value=""> -->
+
+            <section class="inner-box">
+                <h2>日付から空室を検索</h2>
+
+                <div class="wrap_check">
+                    <ul class="date">
+                        <li class="checkin">
+                            <p>チェックイン日</p>
+                            <input type="text" class="check_date" name="checkin1" value="" placeholder="12/21" readonly>
+                        </li>
+                        <li class="checkout">
+                            <p>チェックアウト日</p>
+                            <input type="text" class="check_date" name="checkin1" value="" placeholder="12/22" readonly>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrap_number">
+                    <ul class="number">
+                        <li class="person">
+                            <p>ご利用人数</p>
+                            <select name="search:num">
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <span>名</span>
+                        </li>
+                        <li class="room">
+                            <p>お部屋数</p>
+                            <select name="rooms">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <span>室</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="search_btn">
+                    <p><input type="image" src="img/search_button.png" name="search_submit" alt="検索する"></p>
+                    <p class="mycheck"><a href="#">ご予約の確認・キャンセル</a></p>
+                </div>
+            </section>
+        <!-- </form> -->
+    </div>
+    <!-- search-box end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="menuAll">
+            <ul class="menuflex">
+                <li>
+                    <h3><a href="#main_plan">プラン</a></h3>
+                    <ul class="pageAll">
+                        <li><a href="#">カップルプラン</a></li>
+                        <li><a href="#">ファミリープラン</a></li>
+                        <li><a href="#">ショートステイプラン</a></li>
+                        <li><a href="#">早朝プラン</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><a href="#main_restaurant">レストラン</a></h3>
+                    <ul class="pageAll">
+                        <li><a href="#">Breakfast</a></li>
+                        <li><a href="#">Lunch</a></li>
+                        <li><a href="#">Dinner</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><a href="#main_stay">ご宿泊</a></h3>
+                    <ul class="pageAll">
+                        <li><a href="#">スタンダードツイン</a></li>
+                        <li><a href="#">スタンダードダブル</a></li>
+                        <li><a href="#">スーペリアツイン</a></li>
+                        <li><a href="#">スーペリアダブル</a></li>
+                        <li><a href="#">セミダブル</a></li>
+                        <li><a href="#">スイートルーム</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><a href="#main_wedding">ウェディング</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#main_sightseeing">周辺ガイド</a></h3>
+                    <ul class="pageAll">
+                        <li><a href="#">お台場エリア</a></li>
+                        <li><a href="#">豊洲エリア</a></li>
+                        <li><a href="#">有明エリア</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <h3><a href="#">アクセス</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="#">よくあるご質問</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="#">お問い合わせ</a></h3>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <div class="page_top">
+            <a href="#">ページのトップへ</a>
+        </div> -->
+
+        <!-- <h1 class="footer_logo"><img src="img/logo.png" alt="TokyoBaysideHotel"></h1> -->
+        <p><small>Copyright &copy; Tokyo Bayside Hotel All Right Reserved.</small></p>
+    </footer>
+    <!-- footer end -->
+
+
+
+</body>
+</html>
