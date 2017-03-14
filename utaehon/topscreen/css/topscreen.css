@@ -2,11 +2,18 @@
 
 
 #main{
+    position: relative;
     width: 667px;
     height: 375px;
     overflow: hidden;
     background: url("../image/bg_main.png") no-repeat top left;
     background-size: 667px 375px;
+}
+
+#jasrac{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* external css: flickity.css */
