@@ -1,11 +1,72 @@
 (function (lib, img, cjs, ss, an) {
 
 var p; // shortcut to reference prototypes
+lib.webFontTxtInst = {}; 
+var loadedTypekitCount = 0;
+var loadedGoogleCount = 0;
+var gFontsUpdateCacheList = [];
+var tFontsUpdateCacheList = [];
 lib.ssMetadata = [
-		{name:"hurudokei_atlas_", frames: [[870,1775,13,50],[1085,1436,40,14],[0,2358,1362,46],[0,1864,1366,132],[0,2255,1334,101],[0,1998,1366,132],[1368,1841,70,212],[1353,1457,217,221],[1127,1436,12,12],[1336,1020,179,435],[817,1775,51,55],[1017,1704,31,34],[1353,1680,229,159],[885,1704,63,71],[0,1436,815,426],[1440,1841,46,178],[817,1704,66,69],[1336,2132,312,182],[950,1704,65,39],[0,2132,1334,121],[0,1020,1334,414],[817,1436,266,266],[1085,1457,266,266],[0,0,1398,1018]]}
+		{name:"hurudokei_atlas_", frames: [[1657,1980,13,50],[1464,1993,40,14],[0,1993,1362,46],[0,1436,1366,132],[0,1827,1334,101],[0,1570,1366,132],[1400,382,70,212],[1400,0,217,221],[1336,1704,12,12],[1368,1020,179,435],[1604,1980,51,55],[1431,1993,31,34],[1619,0,229,159],[1672,1909,63,71],[1472,382,46,178],[1604,1909,66,69],[1604,1725,312,182],[1364,1993,65,39],[0,1704,1334,121],[0,1020,1334,414],[1336,1725,266,266],[1368,1457,266,266],[1400,223,304,157],[0,0,1398,1018]]}
 ];
 
 
+
+lib.updateListCache = function (cacheList) {		
+	for(var i = 0; i < cacheList.length; i++) {		
+		if(cacheList[i].cacheCanvas)		
+			cacheList[i].updateCache();		
+	}		
+};		
+
+lib.addElementsToCache = function (textInst, cacheList) {		
+	var cur = textInst;		
+	while(cur != exportRoot) {		
+		if(cacheList.indexOf(cur) != -1)		
+			break;		
+		cur = cur.parent;		
+	}		
+	if(cur != exportRoot) {		
+		var cur2 = textInst;		
+		var index = cacheList.indexOf(cur);		
+		while(cur2 != cur) {		
+			cacheList.splice(index, 0, cur2);		
+			cur2 = cur2.parent;		
+			index++;		
+		}		
+	}		
+	else {		
+		cur = textInst;		
+		while(cur != exportRoot) {		
+			cacheList.push(cur);		
+			cur = cur.parent;		
+		}		
+	}		
+};		
+
+lib.gfontAvailable = function(family, totalGoogleCount) {		
+	lib.properties.webfonts[family] = true;		
+	var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];		
+	for(var f = 0; f < txtInst.length; ++f)		
+		lib.addElementsToCache(txtInst[f], gFontsUpdateCacheList);		
+
+	loadedGoogleCount++;		
+	if(loadedGoogleCount == totalGoogleCount) {		
+		lib.updateListCache(gFontsUpdateCacheList);		
+	}		
+};		
+
+lib.tfontAvailable = function(family, totalTypekitCount) {		
+	lib.properties.webfonts[family] = true;		
+	var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];		
+	for(var f = 0; f < txtInst.length; ++f)		
+		lib.addElementsToCache(txtInst[f], tFontsUpdateCacheList);		
+
+	loadedTypekitCount++;		
+	if(loadedTypekitCount == totalTypekitCount) {		
+		lib.updateListCache(tFontsUpdateCacheList);		
+	}		
+};
 // symbols:
 
 
@@ -108,63 +169,63 @@ lib.ssMetadata = [
 
 
 
-(lib.logo = function() {
+(lib.pendulum = function() {
 	this.spriteSheet = ss["hurudokei_atlas_"];
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.pendulum = function() {
+(lib.right_hand = function() {
 	this.spriteSheet = ss["hurudokei_atlas_"];
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.right_hand = function() {
+(lib.shape1 = function() {
 	this.spriteSheet = ss["hurudokei_atlas_"];
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.shape1 = function() {
+(lib.shape2 = function() {
 	this.spriteSheet = ss["hurudokei_atlas_"];
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.shape2 = function() {
+(lib.wall1 = function() {
 	this.spriteSheet = ss["hurudokei_atlas_"];
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.wall1 = function() {
+(lib.wall2 = function() {
 	this.spriteSheet = ss["hurudokei_atlas_"];
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.wall2 = function() {
+(lib.windDoor1 = function() {
 	this.spriteSheet = ss["hurudokei_atlas_"];
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.windDoor1 = function() {
+(lib.windDoor2 = function() {
 	this.spriteSheet = ss["hurudokei_atlas_"];
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.windDoor2 = function() {
+(lib.ビットマップ30 = function() {
 	this.spriteSheet = ss["hurudokei_atlas_"];
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
@@ -470,16 +531,17 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 }).prototype = getMCSymbolPrototype(lib.幕_1, new cjs.Rectangle(0,0,1398,1018), null);
 
 
-(lib.logo_1 = function(mode,startPosition,loop) {
+(lib.シンボル2 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// logo
-	this.instance = new lib.logo();
+	// レイヤー 1
+	this.instance = new lib.ビットマップ30();
 	this.instance.parent = this;
+	this.instance.setTransform(0,0,2.69,2.69);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.logo_1, new cjs.Rectangle(0,0,815,426), null);
+}).prototype = getMCSymbolPrototype(lib.シンボル2, new cjs.Rectangle(0,0,817.8,422.4), null);
 
 
 (lib.シンボル1 = function(mode,startPosition,loop) {
@@ -739,11 +801,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,229,338);
 	this.initialize(mode,startPosition,loop,{});
 
 	// logo
-	this.instance = new lib.logo_1();
+	this.instance = new lib.シンボル2();
 	this.instance.parent = this;
-	this.instance.setTransform(698.5,392,1,1,0,0,0,407.5,213);
+	this.instance.setTransform(697.9,421.2,1,1,0,0,0,408.9,211.2);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(49).to({alpha:0.98},0).wait(1).to({alpha:0.961},0).wait(1).to({alpha:0.941},0).wait(1).to({alpha:0.922},0).wait(1).to({alpha:0.902},0).wait(1).to({alpha:0.882},0).wait(1).to({alpha:0.863},0).wait(1).to({alpha:0.843},0).wait(1).to({alpha:0.824},0).wait(1).to({alpha:0.804},0).wait(1).to({alpha:0.784},0).wait(1).to({alpha:0.765},0).wait(1).to({alpha:0.745},0).wait(1).to({alpha:0.725},0).wait(1).to({alpha:0.706},0).wait(1).to({alpha:0.686},0).wait(1).to({alpha:0.667},0).wait(1).to({alpha:0.647},0).wait(1).to({alpha:0.627},0).wait(1).to({alpha:0.608},0).wait(1).to({alpha:0.588},0).wait(1).to({alpha:0.569},0).wait(1).to({alpha:0.549},0).wait(1).to({alpha:0.529},0).wait(1).to({alpha:0.51},0).wait(1).to({alpha:0.49},0).wait(1).to({alpha:0.471},0).wait(1).to({alpha:0.451},0).wait(1).to({alpha:0.431},0).wait(1).to({alpha:0.412},0).wait(1).to({alpha:0.392},0).wait(1).to({alpha:0.373},0).wait(1).to({alpha:0.353},0).wait(1).to({alpha:0.333},0).wait(1).to({alpha:0.314},0).wait(1).to({alpha:0.294},0).wait(1).to({alpha:0.275},0).wait(1).to({alpha:0.255},0).wait(1).to({alpha:0.235},0).wait(1).to({alpha:0.216},0).wait(1).to({alpha:0.196},0).wait(1).to({alpha:0.176},0).wait(1).to({alpha:0.157},0).wait(1).to({alpha:0.137},0).wait(1).to({alpha:0.118},0).wait(1).to({alpha:0.098},0).wait(1).to({alpha:0.078},0).wait(1).to({alpha:0.059},0).wait(1).to({alpha:0.039},0).wait(1).to({alpha:0.02},0).wait(1).to({alpha:0},0).to({_off:true},1).wait(95));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(70).to({alpha:0.967},0).wait(1).to({alpha:0.933},0).wait(1).to({alpha:0.9},0).wait(1).to({alpha:0.867},0).wait(1).to({alpha:0.833},0).wait(1).to({alpha:0.8},0).wait(1).to({alpha:0.767},0).wait(1).to({alpha:0.733},0).wait(1).to({alpha:0.7},0).wait(1).to({alpha:0.667},0).wait(1).to({alpha:0.633},0).wait(1).to({alpha:0.6},0).wait(1).to({alpha:0.567},0).wait(1).to({alpha:0.533},0).wait(1).to({alpha:0.5},0).wait(1).to({alpha:0.467},0).wait(1).to({alpha:0.433},0).wait(1).to({alpha:0.4},0).wait(1).to({alpha:0.367},0).wait(1).to({alpha:0.333},0).wait(1).to({alpha:0.3},0).wait(1).to({alpha:0.267},0).wait(1).to({alpha:0.233},0).wait(1).to({alpha:0.2},0).wait(1).to({alpha:0.167},0).wait(1).to({alpha:0.133},0).wait(1).to({alpha:0.1},0).wait(1).to({alpha:0.067},0).wait(1).to({alpha:0.033},0).wait(1).to({alpha:0},0).to({_off:true},1).wait(95));
 
 	// 幕
 	this.instance_1 = new lib.幕_1();
@@ -887,10 +949,11 @@ lib.properties = {
 	fps: 24,
 	color: "#424242",
 	opacity: 1.00,
+	webfonts: {},
 	manifest: [
-		{src:"images/hurudokei_atlas_.png?1489133814300", id:"hurudokei_atlas_"},
-		{src:"sounds/buzzer.mp3?1489133815528", id:"buzzer"},
-		{src:"sounds/hurudokei_1.mp3?1489133815528", id:"hurudokei_1"}
+		{src:"images/hurudokei_atlas_.png", id:"hurudokei_atlas_"},
+		{src:"sounds/buzzer.mp3", id:"buzzer"},
+		{src:"sounds/hurudokei_1.mp3", id:"hurudokei_1"}
 	],
 	preloads: []
 };
