@@ -319,7 +319,7 @@ body{
     .site-title-sub::before,
     .site-title-sub::after{
         display: block;
-        widows: 80%;
+        widows: 100%;
         margin: 10px auto;
     }
     .site-title-sub{
