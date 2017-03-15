@@ -318,11 +318,12 @@ body{
 @media (max-width: 768px){
     .site-title-sub::before,
     .site-title-sub::after{
-        display: inline-block;
+        display: block;
         widows: 80%;
         margin: 10px auto;
     }
     .site-title-sub{
+        display: inline-block;
         font-size: 1.7rem;
     }
 }
