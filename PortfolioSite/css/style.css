@@ -348,4 +348,21 @@ body{
     .about-text{
         line-height: 1.8;
     }
+
+
+    .works-wrapper,
+    .work-box{
+        display: block;
+    }
+    .work-image{
+        display: none;
+    }
+    .work-description{
+        position: relative;
+    }
+    .work-box::after{
+        top: 0;
+        height: 100%;
+        background-size: cover;
+    }
 }
