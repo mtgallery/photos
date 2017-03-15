@@ -315,6 +315,10 @@ body{
 
 /*responsive*/
 
+@media (max-width: 1024px){
+    backgroung-image: none;
+}
+
 @media (max-width: 768px){
     .site-title-sub::before,
     .site-title-sub::after{
@@ -364,5 +368,31 @@ body{
         top: 0;
         height: 100%;
         background-size: cover;
+    }
+
+
+    .skills-wrapper,
+    .skill-box{
+        display: block;
+    }
+    .skill-icon{
+        width: 100px;
+        height: 100px;
+        font-size: 5rem;
+        line-height: 92px;
+    }
+    .skill-box{
+        margin: 40px auto;
+    }
+    .skill-text{
+        margin: 0;
+    }
+
+
+    .contact-form{
+        width: 80%;
+    }
+    .contact{
+        padding-bottom: 80px;
     }
 }
