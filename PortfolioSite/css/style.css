@@ -318,7 +318,7 @@ body{
 @media (max-width: 768px){
     .site-title-sub::before,
     .site-title-sub::after{
-        display: block;
+        display: inline-block;
         widows: 80%;
         margin: 10px auto;
     }
