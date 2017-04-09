@@ -7,6 +7,10 @@ html {
     box-sizing: border-box;
 }
 
+a:link, a:visited {
+    color: #fff;
+}
+
 
 body {
     background: #f9f9f9 url('../images/bg.jpg') no-repeat fixed left bottom;
