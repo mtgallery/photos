@@ -2,145 +2,136 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>シングルページレイアウト</title>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
-    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
-    <script src="https://use.fontawesome.com/6b055468cc.js"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Tatsuki's Portfolio Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    }
+    </style>
+
 </head>
 <body>
 
+
     <header class="header">
-        <p class="site-title-sub">Web designer's portfolio</p>
-        <h1 class="site-title">HI, MY NAME IS...</h1>
-        <p class="site-discription">Check out some of my works.</p>
-        <div class="buttons">
-            <a href="#about" class="button">LEARN MORE</a>
-            <a href="#contact" class="button button-showy">SEND MESSAGE</a>
+        <div class="container-small">
+            <button type="button" class="toggle">
+                <span class="fa fa-bars" title="MENU"></span>
+            </button>
+        </div>
+        <div class="container-big">
+            <nav>
+                <ul class="contents-bar">
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#skills">MY SKILLS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <ul class="head-sns">
+                <li class="twitter-color"><a href="https://twitter.com/tatsumizu0430" target="_blank" alt="Twitter"><span class="fa fa-twitter" title="Twitter"></span></a></li>
+                <li class="facebook-color"><a href="http://www.facebook.com/tmizumot0430" target="_blank" alt="Facebook"><span class="fa fa-facebook" title="Facebook"></span></a></li>
+                <li class="behance-color"><a href="https://www.behance.net/tmizumot0430" target="_blank" alt="Behance"><span class="fa fa-behance action" title="Behance"></span></a></li>
+            </ul>
         </div>
     </header>
+
+    <section class="main">
+        <p class="site-title-sub">Products Design Portfolio</p>
+        <h1 class="site-title">No ◇◇ No LIFE</h1>
+        <p class="site-description">Check out my works</p>
+    </section>
+
     <section class="about" id="about">
         <h2 class="heading">ABOUT ME</h2>
+        <img src="images/icon.png" width="170" height="170" alt="icon" class="pic-icon">
+        <p class="about-name">Creative Designer<br>Tatsuki Mizumoto(23)</p>
         <p class="about-text">
-            はじめまして。日本でWebデザイナーをしています。<br>
-            デザインの専門学校を卒業、制作会社での業務経験を経て、
-            現在はフリーランスとして働いています。
-        </p>
-        <p class="about-text">
-            このサイトは「HTML/CSS モダンコーディング」という書籍のサンプル
-            として作られた、架空のWebデザイナーのポートフォリオサイトです。<br>
-            このサンプルのようなサイトをいちから作る過程を通して、
-            HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。
+            Web/デザイン/広告/デジタルというクリエイティブな分野に興味を持ち、就職活動を辞め一般の四年制大学を卒業後、<br>デジタルハリウッド東京本校の本科デジタルデザイン専攻インタラクティブコースUI/UXゼミで1年間学んで来ました。<br>
+            現在、2度目の就職活動中です。
         </p>
     </section>
-    <section class="works">
+
+    <section class="works" id="works">
         <h2 class="heading">WORKS</h2>
-        <div class="works-wrapper">
-            <div class="work-box tree">
-                <img src="images/tree.jpg" alt="制作事例1" class="work-image">
-                <div class="work-description">
-                    <div class="work-description-inner">
-                        <p class="work-text">
-                            ひとつめの制作事例が入ります。<br>
-                            簡単な説明が入ります。<br>
-                            使用ツール:XXX, XXX, XXX<br>
-                            <a href="#" class="button button-ghost">READ MORE</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="work-box building">
-                <img src="images/building.jpg" alt="制作事例2" class="work-image">
-                <div class="work-description">
-                    <div class="work-description-inner">
-                        <p class="work-text">
-                            ふたつめの制作事例が入ります。<br>
-                            簡単な説明が入ります。<br>
-                            使用ツール:XXX, XXX, XXX<br>
-                            <a href="#" class="button button-ghost">READ MORE</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="work-box lake">
-                <img src="images/lake.jpg" alt="制作事例3" class="work-image">
-                <div class="work-description">
-                    <div class="work-description-inner">
-                        <p class="work-text">
-                            みっつめの制作事例が入ります。<br>
-                            簡単な説明が入ります。<br>
-                            使用ツール:XXX, XXX, XXX<br>
-                            <a href="#" class="button button-ghost">READ MORE</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="work-box sky">
-                <img src="images/sky.jpg" alt="制作事例4" class="work-image">
-                <div class="work-description">
-                    <div class="work-description-inner">
-                        <p class="work-text">
-                            よっつめの制作事例が入ります。<br>
-                            簡単な説明が入ります。<br>
-                            使用ツール:XXX, XXX, XXX<br>
-                            <a href="#" class="button button-ghost">READ MORE</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
-    <section class="skills">
+
+    <section class="skills" id="skills">
         <h2 class="heading">MY SKILLS</h2>
         <div class="skills-wrapper">
+            <div class="skill-box">
+                <i class="skill-icon fa fa-heart"></i>
+                <div class="skill-title">DESIGN</div>
+                <p class="skill-text">
+                    ユーザーが使う場面を常にイメージしながら、<br>
+                    どうすれば最適で使いやすいデザインに、<br>
+                    使ってみたいと心を揺さぶるものになるのか、<br>
+                    ユーザー目線で取り組む繊細なデザインを得意としています。
+                </p>
+            </div>
             <div class="skill-box">
                 <i class="skill-icon fa fa-lightbulb-o"></i>
                 <div class="skill-title">IDEA</div>
                 <p class="skill-text">
-                    何かを考えることが好きです。<br>
-                    新しいことを思いついては試しています。<br>
-                    ディレクションの経験もあります。
+                    企画から制作まで関わることが好きで、<br>
+                    使いやすさや綺麗さのデザインだけではなく、<br>
+                    ビジネス目線でコンテンツやサービスの<br>
+                    先を意識しつつ、トータルにコンテンツを<br>
+                    企画することもできます。
                 </p>
             </div>
             <div class="skill-box">
-                <i class="skill-icon fa fa-paint-brush"></i>
-                <div class="skill-title">DESIGN</div>
+                <i class="skill-icon fa fa-level-up"></i>
+                <div class="skill-title">SKILL UP</div>
                 <p class="skill-text">
-                    見た目の綺麗さだけじゃなくて、<br>
-                    使いやすさ、情報の伝わりやすさなど、<br>
-                    その先まで考えることを意識しています。
-                </p>
-            </div>
-            <div class="skill-box">
-                <i class="skill-icon fa fa-code"></i>
-                <div class="skill-title">CODING</div>
-                <p class="skill-text">
-                    HTML/CSSモーディングも行います。<br>
-                    正しく美しいマークアップと、<br>
-                    今後の変更への強さを考慮しています。
+                    見た目は「クール」に、中身は「ホット」。<br>
+                    常に向上心を持ち、野望や夢は大きく。<br>
+                    成長するためなら努力を惜しまない。<br>
+                    チャレンジしていくバイタリティがあります。
                 </p>
             </div>
         </div>
     </section>
+
     <section class="contact" id="contact">
-        <h2 class="heading">CONTACT</h2>
+        <h2 class="heading">CONTACTS</h2>
         <form class="contact-form">
             <input type="text" name="name" placeholder="NAME">
             <textarea name="massage" placeholder="MESSAGE"></textarea>
             <input type="submit" value="SEND">
         </form>
     </section>
-    <footer class="footer">
-        ©️ Tatsuki Mizumoto's portfolio site
-    </footer>
+
+    <section class="footer">
+        <nav class="foot-sns">
+            <ul>
+                <li class="twitter-color"><a href="https://twitter.com/tatsumizu0430" target="_blank" alt="Twitter"><span class="fa fa-twitter" title="Twitter"></span></a></li>
+                <li class="facebook-color"><a href="http://www.facebook.com/tmizumot0430" target="_blank" alt="Facebook"><span class="fa fa-facebook" title="Facebook"></span></a></li>
+                <li class="behance-color"><a href="https://www.behance.net/tmizumot0430" target="_blank" alt="Behance"><span class="fa fa-behance" title="Behance"></span></a></li>
+            </ul>
+        </nav>
+
+        <p>©️Tatsuki's Portfolio Site All rights reserved.</p>
+    </section>
 
 
-    <script src="lib/placeholders.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
