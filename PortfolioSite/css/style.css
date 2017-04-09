@@ -379,6 +379,11 @@ header {
         font-size: 1.3rem;
     }
 
+    a:link, a:visited,
+    a:hover, a:active {
+        color: #fff;
+    }
+
     .toggle {
         padding: 0;
         border: none;
