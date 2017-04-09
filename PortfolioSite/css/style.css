@@ -36,16 +36,12 @@ header {
     justify-content: flex-start;
     align-items: center;
     font-size: 1.3em;
-    padding: 30px 30px 0;
+    padding: 0 30px;
     z-index: 10000;
 }
 
-.changeColor-gray {
-    color: #aaa;
-}
-
-.changeColor-white {
-    color: #fff;
+.bgColor {
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .container-big {
