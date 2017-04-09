@@ -28,108 +28,120 @@
 <body>
 
 
-    <header class="header">
-        <div class="container-small">
-            <button type="button" class="toggle">
-                <i class="fa fa-bars" title="MENU"><span>MENU</span></i>
-            </button>
-        </div>
-        <div class="container-big">
-            <nav>
-                <ul class="contents-bar">
-                    <li><a href="#about">ABOUT ME</a></li>
-                    <li><a href="#works">WORKS</a></li>
-                    <li><a href="#skills">MY SKILLS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+    <div class="wrapper">
+        <header class="header">
+            <div class="menu">
+                <a class="menu-trigger" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <a class="toggle-title" href="#">
+                    <span>MENU</span>
+                </a>
+            </div>
+            <!-- <div class="container-small">
+                <button type="button" class="toggle">
+                    <i class="fa fa-bars" title="MENU"><span>MENU</span></i>
+                </button>
+            </div> -->
+            <div class="container-big">
+                <nav>
+                    <ul class="contents-bar">
+                        <li><a href="#about">ABOUT ME</a></li>
+                        <li><a href="#works">WORKS</a></li>
+                        <li><a href="#skills">MY SKILLS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <ul class="head-sns">
+                    <li><a class="twitter-color" href="https://twitter.com/tatsumizu0430" target="_blank" alt="Twitter"><i class="fa fa-twitter" title="Twitter"></i></a></li>
+                    <li><a class="facebook-color" href="http://www.facebook.com/tmizumot0430" target="_blank" alt="Facebook"><i class="fa fa-facebook" title="Facebook"></i></a></li>
+                    <li><a class="behance-color" href="https://www.behance.net/tmizumot0430" target="_blank" alt="Behance"><i class="fa fa-behance action" title="Behance"></i></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="main">
+            <p class="site-title-sub">Products Design Portfolio</p>
+            <h1 class="site-title">No ◇◇ No LIFE</h1>
+            <p class="site-description">Check out my works</p>
+        </section>
+
+        <section class="about" id="about">
+            <h2 class="heading">ABOUT ME</h2>
+            <div class="about-wrapper">
+                <img src="images/icon.png" width="170" height="170" alt="icon" class="pic-icon">
+                <p class="about-name">Creative Designer<br>Tatsuki Mizumoto(23)</p>
+                <p class="about-text">
+                    Web/デザイン/広告/デジタルというクリエイティブな分野に興味を持ち、就職活動を辞め一般の四年制大学を卒業後、<br>デジタルハリウッド東京本校の本科デジタルデザイン専攻インタラクティブコースUI/UXゼミで1年間学んで来ました。<br>
+                    現在、2度目の就職活動中です。
+                </p>
+            </div>
+        </section>
+
+        <section class="works" id="works">
+            <h2 class="heading">WORKS</h2>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2 class="heading">MY SKILLS</h2>
+            <div class="skills-wrapper">
+                <div class="skill-box">
+                    <i class="skill-icon fa fa-heart"></i>
+                    <div class="skill-title">DESIGN</div>
+                    <p class="skill-text">
+                        ユーザーが使う場面を常にイメージしながら、<br>
+                        どうすれば最適で使いやすいデザインに、<br>
+                        使ってみたいと心を揺さぶるものになるのか、<br>
+                        ユーザー目線で取り組む繊細なデザインを得意としています。
+                    </p>
+                </div>
+                <div class="skill-box">
+                    <i class="skill-icon fa fa-lightbulb-o"></i>
+                    <div class="skill-title">IDEA</div>
+                    <p class="skill-text">
+                        企画から制作まで関わることが好きで、<br>
+                        使いやすさや綺麗さのデザインだけではなく、<br>
+                        ビジネス目線でコンテンツやサービスの<br>
+                        先を意識しつつ、トータルにコンテンツを<br>
+                        企画することもできます。
+                    </p>
+                </div>
+                <div class="skill-box">
+                    <i class="skill-icon fa fa-level-up"></i>
+                    <div class="skill-title">SKILL UP</div>
+                    <p class="skill-text">
+                        見た目は「クール」に、中身は「ホット」。<br>
+                        常に向上心を持ち、野望や夢は大きく。<br>
+                        成長するためなら努力を惜しまない。<br>
+                        チャレンジしていくバイタリティがあります。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading">CONTACTS</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="NAME">
+                <textarea name="massage" placeholder="MESSAGE"></textarea>
+                <input type="submit" value="SEND">
+            </form>
+        </section>
+
+        <section class="footer">
+            <nav class="foot-sns">
+                <ul>
+                    <li><a class="twitter-color" href="https://twitter.com/tatsumizu0430" target="_blank" alt="Twitter"><i class="fa fa-twitter" title="Twitter"></i></a></li>
+                    <li><a class="facebook-color" href="http://www.facebook.com/tmizumot0430" target="_blank" alt="Facebook"><i class="fa fa-facebook" title="Facebook"></i></a></li>
+                    <li><a class="behance-color" href="https://www.behance.net/tmizumot0430" target="_blank" alt="Behance"><i class="fa fa-behance" title="Behance"></i></a></li>
                 </ul>
             </nav>
-            <ul class="head-sns">
-                <li><a class="twitter-color" href="https://twitter.com/tatsumizu0430" target="_blank" alt="Twitter"><i class="fa fa-twitter" title="Twitter"></i></a></li>
-                <li><a class="facebook-color" href="http://www.facebook.com/tmizumot0430" target="_blank" alt="Facebook"><i class="fa fa-facebook" title="Facebook"></i></a></li>
-                <li><a class="behance-color" href="https://www.behance.net/tmizumot0430" target="_blank" alt="Behance"><i class="fa fa-behance action" title="Behance"></i></a></li>
-            </ul>
-        </div>
-    </header>
 
-    <section class="main">
-        <p class="site-title-sub">Products Design Portfolio</p>
-        <h1 class="site-title">No ◇◇ No LIFE</h1>
-        <p class="site-description">Check out my works</p>
-    </section>
-
-    <section class="about" id="about">
-        <h2 class="heading">ABOUT ME</h2>
-        <div class="about-wrapper">
-            <img src="images/icon.png" width="170" height="170" alt="icon" class="pic-icon">
-            <p class="about-name">Creative Designer<br>Tatsuki Mizumoto(23)</p>
-            <p class="about-text">
-                Web/デザイン/広告/デジタルというクリエイティブな分野に興味を持ち、就職活動を辞め一般の四年制大学を卒業後、<br>デジタルハリウッド東京本校の本科デジタルデザイン専攻インタラクティブコースUI/UXゼミで1年間学んで来ました。<br>
-                現在、2度目の就職活動中です。
-            </p>
-        </div>
-    </section>
-
-    <section class="works" id="works">
-        <h2 class="heading">WORKS</h2>
-    </section>
-
-    <section class="skills" id="skills">
-        <h2 class="heading">MY SKILLS</h2>
-        <div class="skills-wrapper">
-            <div class="skill-box">
-                <i class="skill-icon fa fa-heart"></i>
-                <div class="skill-title">DESIGN</div>
-                <p class="skill-text">
-                    ユーザーが使う場面を常にイメージしながら、<br>
-                    どうすれば最適で使いやすいデザインに、<br>
-                    使ってみたいと心を揺さぶるものになるのか、<br>
-                    ユーザー目線で取り組む繊細なデザインを得意としています。
-                </p>
-            </div>
-            <div class="skill-box">
-                <i class="skill-icon fa fa-lightbulb-o"></i>
-                <div class="skill-title">IDEA</div>
-                <p class="skill-text">
-                    企画から制作まで関わることが好きで、<br>
-                    使いやすさや綺麗さのデザインだけではなく、<br>
-                    ビジネス目線でコンテンツやサービスの<br>
-                    先を意識しつつ、トータルにコンテンツを<br>
-                    企画することもできます。
-                </p>
-            </div>
-            <div class="skill-box">
-                <i class="skill-icon fa fa-level-up"></i>
-                <div class="skill-title">SKILL UP</div>
-                <p class="skill-text">
-                    見た目は「クール」に、中身は「ホット」。<br>
-                    常に向上心を持ち、野望や夢は大きく。<br>
-                    成長するためなら努力を惜しまない。<br>
-                    チャレンジしていくバイタリティがあります。
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2 class="heading">CONTACTS</h2>
-        <form class="contact-form">
-            <input type="text" name="name" placeholder="NAME">
-            <textarea name="massage" placeholder="MESSAGE"></textarea>
-            <input type="submit" value="SEND">
-        </form>
-    </section>
-
-    <section class="footer">
-        <nav class="foot-sns">
-            <ul>
-                <li><a class="twitter-color" href="https://twitter.com/tatsumizu0430" target="_blank" alt="Twitter"><i class="fa fa-twitter" title="Twitter"></i></a></li>
-                <li><a class="facebook-color" href="http://www.facebook.com/tmizumot0430" target="_blank" alt="Facebook"><i class="fa fa-facebook" title="Facebook"></i></a></li>
-                <li><a class="behance-color" href="https://www.behance.net/tmizumot0430" target="_blank" alt="Behance"><i class="fa fa-behance" title="Behance"></i></a></li>
-            </ul>
-        </nav>
-
-        <p>Copyright(C) Tatsuki's Portfolio Site All rights reserved.</p>
-    </section>
+            <p>Copyright(C) Tatsuki's Portfolio Site All rights reserved.</p>
+        </section>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -139,6 +151,7 @@
     $.backstretch("images/bg.jpg");
     </script>
     <script src="js/scroll-header.js"></script>
+    <script src="js/menu-active.js"></script>
 
 
 </body>

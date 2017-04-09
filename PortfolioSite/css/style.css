@@ -53,22 +53,71 @@ header {
     list-style: none;
 }
 
-.container-small {
+
+/*menu*/
+
+.menu {
     display: flex;
+    align-items: center;
     letter-spacing: 1px;
 }
 
-.container-small i {
-    margin-right: 5px;
-}
-
-.container-small span {
+.toggle-title span {
     display: inline-block;
     font-family: "Crimson Text", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     font-size: 16px;
-    vertical-align: middle;
     padding-left: 5px;
 }
+
+
+.wrapper.bgFull {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu-trigger,
+.menu-trigger span {
+	display: inline-block;
+	transition: all .4s;
+	box-sizing: border-box;
+}
+.menu-trigger {
+	position: relative;
+	width: 24px;
+	height: 18px;
+}
+.menu-trigger span {
+	position: absolute;
+	left: 0;
+	width: 24px;
+	height: 2px;
+	background-color: #fff;
+	border-radius: 2px;
+}
+.menu-trigger span:nth-of-type(1) {
+	top: 0;
+}
+.menu-trigger span:nth-of-type(2) {
+	top: 8px;
+}
+.menu-trigger span:nth-of-type(3) {
+	bottom: 0;
+}
+
+/*menu-trigger*/
+
+.menu-trigger.active span:nth-of-type(1) {
+	-webkit-transform: translateY(8px) rotate(-315deg);
+	transform: translateY(8px) rotate(-315deg);
+}
+.menu-trigger.active span:nth-of-type(2) {
+	opacity: 0;
+}
+.menu-trigger.active span:nth-of-type(3) {
+	-webkit-transform: translateY(-8px) rotate(315deg);
+	transform: translateY(-8px) rotate(315deg);
+}
+
+/**/
 
 .contents-bar {
     display: flex;
@@ -385,6 +434,10 @@ header {
 @media (min-width: 768px) {
     /* 大きな画面用の設定 */
     .toggle {
+        display: none;
+    }
+
+    .menu-trigger {
         display: none;
     }
 }
