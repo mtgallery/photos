@@ -341,13 +341,13 @@ header {
 
 .foot-sns a {
     display: block;
-    color: inherit;
     font-size: 24px;
     text-decoration: none;
     text-align: center;
 }
 
 .foot-sns i {
+    color: inherit;
     border: solid 1px currentColor;
     width: 2em;
     line-height: 2em;
