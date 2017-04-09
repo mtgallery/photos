@@ -26,8 +26,6 @@ body {
 }
 
 
-
-
 header {
     position: fixed;
     width: 100%;
@@ -53,6 +51,23 @@ header {
 
 .header ul {
     list-style: none;
+}
+
+.container-small {
+    display: flex;
+    letter-spacing: 1px;
+}
+
+.container-small i {
+    margin-right: 5px;
+}
+
+.container-small span {
+    display: inline-block;
+    font-family: "Crimson Text", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-size: 16px;
+    vertical-align: middle;
+    padding-left: 5px;
 }
 
 .contents-bar {
