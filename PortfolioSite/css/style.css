@@ -27,6 +27,7 @@ body {
 
 
 
+
 header {
     position: fixed;
     width: 100%;
@@ -37,6 +38,14 @@ header {
     font-size: 1.3em;
     padding: 30px 30px 0;
     z-index: 10000;
+}
+
+.changeColor-gray {
+    color: #aaa;
+}
+
+.changeColor-white {
+    color: #fff;
 }
 
 .container-big {
@@ -132,7 +141,7 @@ header {
 
 .main {
     /*background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));*/
-    padding: 130px 30px 80px;
+    padding: 100px 30px;
 }
 
 
@@ -361,11 +370,6 @@ header {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.footer span {
-    color: #fff;
-}
-
-
 
 @media (min-width: 768px) {
     /* 大きな画面用の設定 */
@@ -426,11 +430,7 @@ header {
 
     .site-title {
         margin-top: 35px;
-        font-size: 4.5rem;
-    }
-
-    .main {
-        padding-top: 100px;
+        font-size: 5em;
     }
 
     .heading {
