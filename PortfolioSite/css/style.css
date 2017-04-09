@@ -351,6 +351,10 @@ header {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.footer span {
+    color: #fff;
+}
+
 
 
 @media (min-width: 768px) {
@@ -463,7 +467,6 @@ header {
     }
 
     .footer p {
-        color: #fff;
         font-size: 12px;
     }
 }
