@@ -111,16 +111,16 @@ header {
 }
 
 /* facebook */
-.facebook-color a:hover   {
+.facebook-color i:hover   {
 	color: #445FAC;
 }
 /* Twitter */
-.twitter-color a:hover {
+.twitter-color i:hover {
 	color: #00a8e8;
 }
 
 /* Behance */
-.behance-color a:hover {
+.behance-color i:hover {
     color: #1769ff;
 }
 
@@ -344,14 +344,17 @@ header {
     color: inherit;
     font-size: 24px;
     text-decoration: none;
+    text-align: center;
+}
+
+.foot-sns i {
     border: solid 1px currentColor;
     width: 2em;
     line-height: 2em;
     border-radius: 50%;
-    text-align: center;
 }
 
-.foot-sns a:hover {
+.foot-sns i:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
