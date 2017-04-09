@@ -299,7 +299,7 @@ header {
 
 .contact-form input[type=submit]{
     display: block;
-    width: 200px;
+    width: 50%;
     margin: 40px auto 0;
     padding: 15px;
     border: 1px solid rgba(255,255,255,0.4);
@@ -322,17 +322,23 @@ header {
 .foot-sns ul {
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     list-style: none;
 }
 
+.foot-sns li {
+    margin-right: 15px;
+}
+
+.foot-sns li:last-child {
+    margin-right: 0;
+}
+
 .foot-sns a {
     display: block;
-    margin-right: 8px;
-    padding: 0;
     color: inherit;
-    font-size: 16px;
+    font-size: 24px;
     text-decoration: none;
     border: solid 1px currentColor;
     width: 2em;
@@ -448,11 +454,16 @@ header {
       margin: 0;
     }
 
+    .contact-form{
+        display: inline-block;
+    }
+
     .foot-sns a {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .footer p {
+        color: #fff;
         font-size: 12px;
     }
 }
