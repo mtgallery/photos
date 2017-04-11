@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tatsuki's Portfolio Site</title>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">!-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate-nav.css">
 
     <style>
     .sr-only {
@@ -30,36 +30,45 @@
 
     <div class="wrapper">
         <header class="header">
-            <div class="menu">
-                <a class="menu-trigger" href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-                <a class="toggle-title" href="#">
-                    <span>MENU</span>
-                </a>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <nav>
+                        <ul class="full-nav">
+                            <li><a href="#about">ABOUT ME</a></li>
+                            <li><a href="#works">WORKS</a></li>
+                            <li><a href="#skills">MY SKILLS</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <!-- <div class="container-small">
-                <button type="button" class="toggle">
-                    <i class="fa fa-bars" title="MENU"><span>MENU</span></i>
-                </button>
-            </div> -->
+            <!-- フルスクリーンナビゲーション -->
+
+            <a class="menu-trigger" href="javascript:void(0)" onclick="openNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <!-- ハンバーガーメニュー -->
+
             <div class="container-big">
                 <nav>
-                    <ul class="contents-bar">
+                    <ul class="contents-bar" id="menu">
                         <li><a href="#about">ABOUT ME</a></li>
                         <li><a href="#works">WORKS</a></li>
                         <li><a href="#skills">MY SKILLS</a></li>
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
-                <ul class="head-sns">
-                    <li><a class="twitter-color" href="https://twitter.com/tatsumizu0430" target="_blank" alt="Twitter"><i class="fa fa-twitter" title="Twitter"></i></a></li>
-                    <li><a class="facebook-color" href="http://www.facebook.com/tmizumot0430" target="_blank" alt="Facebook"><i class="fa fa-facebook" title="Facebook"></i></a></li>
-                    <li><a class="behance-color" href="https://www.behance.net/tmizumot0430" target="_blank" alt="Behance"><i class="fa fa-behance action" title="Behance"></i></a></li>
-                </ul>
             </div>
+            <!-- ヘッダーナビゲーション -->
+            <ul class="head-sns">
+                <li><a class="twitter-color" href="https://twitter.com/tatsumizu0430" target="_blank" alt="Twitter"><i class="fa fa-twitter" title="Twitter"></i></a></li>
+                <li><a class="facebook-color" href="http://www.facebook.com/tmizumot0430" target="_blank" alt="Facebook"><i class="fa fa-facebook" title="Facebook"></i></a></li>
+                <li><a class="behance-color" href="https://www.behance.net/tmizumot0430" target="_blank" alt="Behance"><i class="fa fa-behance action" title="Behance"></i></a></li>
+            </ul>
+            <!-- SNSアイコン -->
         </header>
 
         <section class="main">
@@ -67,6 +76,7 @@
             <h1 class="site-title">No ◇◇ No LIFE</h1>
             <p class="site-description">Check out my works</p>
         </section>
+        <!-- メインヴィジュアル -->
 
         <section class="about" id="about">
             <h2 class="heading">ABOUT ME</h2>
@@ -79,10 +89,12 @@
                 </p>
             </div>
         </section>
+        <!-- About Me -->
 
         <section class="works" id="works">
             <h2 class="heading">WORKS</h2>
         </section>
+        <!-- Works -->
 
         <section class="skills" id="skills">
             <h2 class="heading">MY SKILLS</h2>
@@ -120,6 +132,7 @@
                 </div>
             </div>
         </section>
+        <!-- My Skills -->
 
         <section class="contact" id="contact">
             <h2 class="heading">CONTACTS</h2>
@@ -129,6 +142,7 @@
                 <input type="submit" value="SEND">
             </form>
         </section>
+        <!-- Contact -->
 
         <section class="footer">
             <nav class="foot-sns">
@@ -151,7 +165,8 @@
     $.backstretch("images/bg.jpg");
     </script>
     <script src="js/scroll-header.js"></script>
-    <script src="js/menu-active.js"></script>
+    <script src="js/fullscreenNav.js"></script>
+
 
 
 </body>

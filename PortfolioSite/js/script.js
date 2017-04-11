@@ -15,7 +15,7 @@ $(function(){
     });
 
     // header ul li a をクリックしたら
-    $('.contents-bar a').on('click', function(evt){
+    $('.contents-bar a, .full-nav a').on('click', function(evt){
         console.log('クリックしたよ');
         evt.preventDefault();
 

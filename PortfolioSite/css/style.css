@@ -41,6 +41,7 @@ header {
 .bgColor {
     background-color: rgba(0, 0, 0, 0.8);
 }
+/*アニメーションヘッダーbgカラー*/
 
 .container-big {
     width: 100%;
@@ -54,25 +55,51 @@ header {
 }
 
 
-/*menu*/
-
-.menu {
-    display: flex;
-    align-items: center;
-    letter-spacing: 1px;
-}
-
-.toggle-title span {
-    display: inline-block;
-    font-family: "Crimson Text", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-    font-size: 16px;
-    padding-left: 5px;
-}
-
+/* header menu */
 
 .wrapper.bgFull {
     background-color: rgba(0, 0, 0, 0.6);
 }
+
+.full-nav {
+    display: inline-block;
+    -webkit-padding-start: 0;
+    letter-spacing: 1px;
+}
+
+.full-nav li {
+    margin-right: 0 !important;
+}
+
+.full-nav a {
+  position: relative;
+  text-decoration: none;
+}
+
+.full-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  background-color: red;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.full-nav a:hover::after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.full-nav a:hover {
+    color: #f1f1f1;
+}
+/*Full Screen Navigation*/
 
 .menu-trigger,
 .menu-trigger span {
@@ -82,7 +109,7 @@ header {
 }
 .menu-trigger {
 	position: relative;
-	width: 24px;
+	width: 36px;
 	height: 18px;
 }
 .menu-trigger span {
@@ -103,9 +130,12 @@ header {
 	bottom: 0;
 }
 
-/*menu-trigger*/
+.menu-trigger a:hover, .menu-trigger a:focus {
+    opacity: 0.2;
+}
+/*ハンバーガーメニュー*/
 
-.menu-trigger.active span:nth-of-type(1) {
+/*.menu-trigger.active span:nth-of-type(1) {
 	-webkit-transform: translateY(8px) rotate(-315deg);
 	transform: translateY(8px) rotate(-315deg);
 }
@@ -115,9 +145,10 @@ header {
 .menu-trigger.active span:nth-of-type(3) {
 	-webkit-transform: translateY(-8px) rotate(315deg);
 	transform: translateY(-8px) rotate(315deg);
-}
+}*/
 
-/**/
+/*menu-trigger animation*/
+
 
 .contents-bar {
     display: flex;
@@ -130,6 +161,7 @@ header {
   display: inline-block;
   text-decoration: none;
 }
+
 .contents-bar a::after {
   content: '';
   position: absolute;
@@ -196,11 +228,11 @@ header {
     color: #1769ff;
 }
 
+/*header menu*/
 
 
 
 .main {
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));*/
     padding: 100px 30px;
 }
 
@@ -394,7 +426,7 @@ header {
 
 
 
-/*--- sns-icon ---*/
+/*--- footer sns-icon ---*/
 .foot-sns ul {
     display: flex;
     justify-content: center;
@@ -431,6 +463,7 @@ header {
 }
 
 
+/* responsive */
 @media (min-width: 768px) {
     /* 大きな画面用の設定 */
     .toggle {
@@ -441,8 +474,6 @@ header {
         display: none;
     }
 }
-
-
 
 
 @media (max-width: 768px) {
@@ -473,13 +504,13 @@ header {
         justify-content: flex-start;
     }
 
-    .contents-bar {
+    #menu {
         display: none;
     }
 
-    /*.head-sns {
-        display: none;
-    }*/
+    .menu-trigger:hover {
+        opacity: 0.6;
+    }
 
     .site-title-sub {
         font-size: 1.7rem;
