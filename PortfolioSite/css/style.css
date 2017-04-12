@@ -347,14 +347,15 @@ header {
     min-height: 250px;
     background-position: center;
     background-size: cover;
+    opacity: 0.6;
 }
 
-/*.works .photo:hover {
+.works .photo:hover {
     opacity: 1;
     transition: opacity 0.3s linear;
-}*/
+}
 
-.works .text {
+/*.works .text {
     display: block;
     width: auto;
     height: 250px;
@@ -365,8 +366,6 @@ header {
     color: #252525;
     color: var(--text-bright-color);
     text-align: start;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 1;
 }
 
 .works .text:hover {
@@ -382,6 +381,27 @@ header {
 .works p {
     margin: 0;
     font-size: 14px;
+}*/
+
+/* #loadarea
+--------------------------- */
+#loadmore {
+    margin: 60px auto;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    color: #252525;
+    background: #fff;
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 1;
+}
+
+#loadmore:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s linear;
 }
 
 @media (min-width: 1000px) {
@@ -625,6 +645,14 @@ header {
         line-height: 1.8;
     }
 
+    #loadmore {
+        width: 150px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 12px;
+        border: solid 1px #aaa;
+        border-radius: 5px;
+    }
 
     .skills-wrapper,
     .skill-box {
@@ -654,4 +682,23 @@ header {
     .footer p {
         font-size: 12px;
     }
+}
+
+
+
+
+.list {
+	transition: .8s;
+}
+
+.list-mv07{
+	opacity: 0;
+	transform: translate(0,60px);
+	-webkit-transform: translate(0,60px);
+}
+
+.mv07{
+	opacity: 1.0;
+	transform: translate(0,0);
+	-webkit-transform: translate(0,0);
 }
