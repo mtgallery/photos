@@ -13,7 +13,7 @@ a:link, a:visited {
 
 
 body {
-    background: #f9f9f9 url('../images/bg.jpg') no-repeat fixed center center;
+    background: url('../images/bg.jpg') no-repeat fixed center center;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
