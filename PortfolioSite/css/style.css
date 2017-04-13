@@ -13,7 +13,7 @@ a:link, a:visited {
 
 
 body {
-    background: url('../images/bg.jpg') no-repeat fixed center center;
+    background: #f9f9f9 url('../images/bg.jpg') no-repeat fixed center center;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -315,7 +315,7 @@ header {
 
 
 .works {
-    background-color: rgba(0,0,0,0.7);
+    /*background-color: rgba(0,0,0,0.7);*/
     padding: 40px 0;
 }
 
