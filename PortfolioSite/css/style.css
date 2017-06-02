@@ -703,7 +703,8 @@ header {
 	transition: .8s;
 }
 
-.list ul {
+.list ul.school-log {
+    padding-right: 40px;
     list-style: none;
     display: inline-block;
     text-align: left;
