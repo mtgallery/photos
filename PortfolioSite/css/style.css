@@ -703,6 +703,12 @@ header {
 	transition: .8s;
 }
 
+.list ul {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+}
+
 .list-mv07{
 	opacity: 0;
 	transform: translate(0,60px);
