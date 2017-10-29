@@ -1,6 +1,6 @@
 <?php
 
-define('MAIL_INQUIRY', 'schoo.iwata@gmail.com');
+define('MAIL_INQUIRY', 'tmizumot04@gmail.com');
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
