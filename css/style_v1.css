@@ -60,7 +60,7 @@ header {
     background: #f9f9f9 url(https://mtgallery.github.io/photos/images/bg01.jpg) no-repeat;
     position: fixed;
     z-index: -1;
-    top: -140px;
+    top: 0px;
     left: 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
