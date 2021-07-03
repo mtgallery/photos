@@ -48,43 +48,45 @@
 
     <div class="wrapper">
         <header class="header">
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
+            <div class="contents_wrap">
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <nav>
+                            <ul class="full-nav">
+                                <li><a href="#about">ABOUT ME</a></li>
+                                <li><a href="#gallery">GALLERY</a></li>
+                                <li><a href="#contact">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- フルスクリーンナビゲーション -->
+
+                <a class="menu-trigger" href="javascript:void(0)" onclick="openNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <!-- ハンバーガーメニュー -->
+
+                <div class="container-big">
                     <nav>
-                        <ul class="full-nav">
+                        <ul class="contents-bar" id="menu">
                             <li><a href="#about">ABOUT ME</a></li>
                             <li><a href="#gallery">GALLERY</a></li>
                             <li><a href="#contact">CONTACT</a></li>
                         </ul>
                     </nav>
                 </div>
+                <!-- ヘッダーナビゲーション -->
+                <ul class="head-sns">
+                    <li><a class="twitter-color" href="https://twitter.com/creativeX00" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a></li>
+                    <li><a class="instagram-color" href="https://www.instagram.com/tatsuki_0430" target="_blank"><i class="fa fa-instagram" title="Instagram"></i></a></li>
+                    <li><a class="behance-color" href="https://www.behance.net/tmizumot0430" target="_blank"><i class="fa fa-behance action" title="Behance"></i></a></li>
+                </ul>
+                <!-- SNSアイコン -->
             </div>
-            <!-- フルスクリーンナビゲーション -->
-
-            <a class="menu-trigger" href="javascript:void(0)" onclick="openNav()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <!-- ハンバーガーメニュー -->
-
-            <div class="container-big">
-                <nav>
-                    <ul class="contents-bar" id="menu">
-                        <li><a href="#about">ABOUT ME</a></li>
-                        <li><a href="#gallery">GALLERY</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- ヘッダーナビゲーション -->
-            <ul class="head-sns">
-                <li><a class="twitter-color" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a></li>
-                <li><a class="facebook-color" href="http://www.facebook.com/" target="_blank"><i class="fa fa-facebook" title="Facebook"></i></a></li>
-                <li><a class="behance-color" href="https://www.behance.net/tmizumot0430" target="_blank"><i class="fa fa-behance action" title="Behance"></i></a></li>
-            </ul>
-            <!-- SNSアイコン -->
         </header>
 
         <div class="main">
@@ -98,105 +100,113 @@
         <!-- メインヴィジュアル -->
 
         <div class="about" id="about">
-            <section class="list list-mv07">
-                <h2 class="heading">ABOUT ME</h2>
-                <div class="about-wrapper">
-                    <img src="images/icon01.png" alt="アイコン" class="pic-icon">
-                    <p class="about-name">tatsuki<br>デザイナー/写真家</p>
-                </div>
-                <div class="list list-mv07">
-                    <ul class="log">
-                        <li>あなたにとって大切なひととの幸せな瞬間をカタチに</li>
-                        <li>素敵な時間をありがとうといってもらえるような体験を</li>
-                        <li>#幸せな瞬間をもっと世界に</li>
-                        <li>#毎日が笑顔で溢れてる</li>
-                        <li>#ほっこりするような瞬間を</li>
-                    </ul>
+            <div class="contents_wrap">
+                <section class="list list-mv07">
+                    <h2 class="heading">ABOUT ME</h2>
+                    <div class="about-wrapper">
+                        <img src="images/icon01.png" alt="アイコン" class="pic-icon">
+                        <p class="about-name">tatsuki<br>デザイナー/写真家</p>
+                    </div>
+                    <div class="list list-mv07">
+                        <ul class="log">
+                            <li>あなたにとって大切なひととの幸せな瞬間をカタチに</li>
+                            <li>素敵な時間をありがとうといってもらえるような体験を</li>
+                            <li>#幸せな瞬間をもっと世界に</li>
+                            <li>#毎日が笑顔で溢れてる</li>
+                            <li>#ほっこりするような瞬間を</li>
+                        </ul>
 
-                    <h2>よく使うもの</h2>
-                    <ul class="log">
-                        <li>■Nikon D750/単焦点 50mm F値1.8/大三元(標準レンズ) 24-70mm F値2.8 ED VR</li>
-                        <li>■iPhone12Pro Max</li>
-                        <li>■Lightroom/Photoshop</li>
-                    </ul>
-                </div>
+                        <h2>よく使うもの</h2>
+                        <ul class="log">
+                            <li>■Nikon D750/単焦点 50mm F値1.8/大三元(標準レンズ) 24-70mm F値2.8 ED VR</li>
+                            <li>■iPhone12Pro Max</li>
+                            <li>■Lightroom/Photoshop</li>
+                        </ul>
+                    </div>
 
-            </section>
+                </section>
+            </div>
         </div>
         <!-- About Me -->
 
         <section class="gallery" id="gallery">
-            <h2 class="heading list list-mv07">GALLERY</h2>
-            <div class="container" id="loadarea">
-                <div class="list list-item list-mv07">
-                    <a href="" target="_blank">
-                        <div class="photo" style="background-image:url(images/gallery/img1.jpg)">
-                        </div>
-                    </a>
+            <div class="contents_wrap">
+                <h2 class="heading list list-mv07">GALLERY</h2>
+                <div class="container" id="loadarea">
+                    <div class="list list-item list-mv07">
+                        <a href="" target="_blank">
+                            <div class="photo" style="background-image:url(images/gallery/img1.jpg)">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list list-item list-mv07">
+                        <a href="" target="_blank">
+                            <div class="photo" style="background-image:url(images/gallery/img2.jpg)">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list list-item list-mv07">
+                        <a href="#">
+                            <div class="photo" style="background-image: url(images/gallery/img3.jpg)">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list list-item list-mv07">
+                        <a href="https://www.behance.net/gallery/50155767/_" target="_blank">
+                            <div class="photo" style="background-image: url(images/gallery/img4.jpg)">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list list-item list-mv07">
+                        <a href="" target="_blank">
+                            <div class="photo" style="background-image: url(images/gallery/img5.jpg)">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list list-item list-mv07">
+                        <a href="" target="_blank">
+                            <div class="photo" style="background-image:url(images/gallery/img6.jpg)">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list list-item list-mv07">
+                        <a href="" target="_blank">
+                            <div class="photo" style="background-image:url(images/gallery/img7.jpg)">
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="list list-item list-mv07">
-                    <a href="" target="_blank">
-                        <div class="photo" style="background-image:url(images/gallery/img2.jpg)">
-                        </div>
-                    </a>
+                <div class="list list-mv07">
+                    <a href="javascript:void(0);" id="loadmore">SHOW MORE</a>
                 </div>
-                <div class="list list-item list-mv07">
-                    <a href="#">
-                        <div class="photo" style="background-image: url(images/gallery/img3.jpg)">
-                        </div>
-                    </a>
-                </div>
-                <div class="list list-item list-mv07">
-                    <a href="https://www.behance.net/gallery/50155767/_" target="_blank">
-                        <div class="photo" style="background-image: url(images/gallery/img4.jpg)">
-                        </div>
-                    </a>
-                </div>
-                <div class="list list-item list-mv07">
-                    <a href="" target="_blank">
-                        <div class="photo" style="background-image: url(images/gallery/img5.jpg)">
-                        </div>
-                    </a>
-                </div>
-                <div class="list list-item list-mv07">
-                    <a href="" target="_blank">
-                        <div class="photo" style="background-image:url(images/gallery/img6.jpg)">
-                        </div>
-                    </a>
-                </div>
-                <div class="list list-item list-mv07">
-                    <a href="" target="_blank">
-                        <div class="photo" style="background-image:url(images/gallery/img7.jpg)">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="list list-mv07">
-                <a href="javascript:void(0);" id="loadmore">SHOW MORE</a>
             </div>
         </section>
         <!-- gallery -->
 
         <section class="contact" id="contact">
-            <h2 class="heading">CONTACTS</h2>
-            <form class="contact-form">
-                <input type="text" name="name" placeholder="NAME">
-                <textarea name="massage" placeholder="MESSAGE"></textarea>
-                <input type="submit" value="SEND">
-            </form>
+            <div class="contents_wrap">
+                <h2 class="heading">CONTACTS</h2>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="NAME">
+                    <textarea name="massage" placeholder="MESSAGE"></textarea>
+                    <input type="submit" value="SEND">
+                </form>
+            </div>
         </section>
         <!-- Contact -->
 
         <div class="footer">
-            <nav class="foot-sns">
-                <ul>
-                    <li><a class="twitter-color" href="https://twitter.com/tatsumizu0430" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a></li>
-                    <li><a class="facebook-color" href="http://www.facebook.com/tmizumot0430" target="_blank"><i class="fa fa-facebook" title="Facebook"></i></a></li>
-                    <li><a class="behance-color" href="https://www.behance.net/tmizumot0430" target="_blank"><i class="fa fa-behance" title="Behance"></i></a></li>
-                </ul>
-            </nav>
+            <div class="contents_wrap">
+                <nav class="foot-sns">
+                    <ul>
+                        <li><a class="twitter-color" href="https://twitter.com/creativeX00" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a></li>
+                        <li><a class="instagram-color" href="https://www.instagram.com/tatsuki_0430" target="_blank"><i class="fa fa-instagram" title="Instagram"></i></a></li>
+                        <li><a class="behance-color" href="https://www.behance.net/tmizumot0430" target="_blank"><i class="fa fa-behance" title="Behance"></i></a></li>
+                    </ul>
+                </nav>
 
-            <p>©︎Tatsuki's Photo Gallery All rights reserved.</p>
+                <p>©︎Tatsuki's Photo Gallery All rights reserved.</p>
+            </div>
         </div>
     </div>
 
