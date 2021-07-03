@@ -592,8 +592,8 @@ header {
     }
 
     .main {
-        padding: 20vh 12vw;
-        min-height: 100vh;
+        padding: 15vh 12vw 20vh;
+        max-height: 100vh;
     }
 
     .toggle {
