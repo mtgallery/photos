@@ -60,7 +60,8 @@ header {
     background: #f9f9f9 url(https://mtgallery.github.io/photos/images/bg01.jpg) no-repeat;
     position: fixed;
     z-index: -1;
-    top: 0px;
+    background-position: 0px 100%;
+    top: 0;
     left: 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -247,7 +248,7 @@ header {
 
 .main {
     min-height: 100vh;
-    padding: 25vh 0;
+    padding: 230px 0 130px;
 }
 
 
