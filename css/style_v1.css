@@ -13,12 +13,6 @@ a:link, a:visited {
 
 
 body {
-    background: #f9f9f9 url('../images/bg.jpg') no-repeat fixed center center;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     color: #fff;
     text-align: center;
     font-size: 1.4rem;
@@ -56,6 +50,14 @@ header {
 
 
 /* header menu */
+.wrapper {
+    background: #f9f9f9 url('../images/bg01.jpg') no-repeat fixed center center;
+    background-position: 23% 0vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 .wrapper.bgFull {
     background-color: rgba(0, 0, 0, 0.6);
