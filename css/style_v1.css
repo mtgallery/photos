@@ -277,8 +277,12 @@ header {
 }
 
 .about-wrapper {
-    width: 80%;
+    width: 100%;
     margin: 50px auto 50px;
+}
+
+.about-wrapper img{
+    width: 170px;
 }
 
 .heading {
