@@ -579,7 +579,7 @@ header {
 }
 
 .list ul.log {
-    padding-right: 40px;
+    padding: 0px 20px;
     list-style: none;
     display: inline-block;
     text-align: left;
