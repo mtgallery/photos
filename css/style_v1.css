@@ -319,24 +319,24 @@ header {
 /*--- about me ---*/
 
 
-.works {
+.gallery {
     background-color: rgba(0,0,0,0.7);
     padding: 40px 0;
 }
 
-.works .container {
+.gallery .container {
     display: flex;
     flex-wrap: wrap;
     max-width: none;
     margin: 5px auto;
 }
 
-.works .list-item {
+.gallery .list-item {
     flex: 1 1 250px;
     display: flex;
 }
 
-.works a {
+.gallery a {
     position: relative;
     flex: 1;
     margin: 5px;
@@ -348,19 +348,19 @@ header {
     text-decoration: none;
 }
 
-.works .photo {
+.gallery .photo {
     min-height: 250px;
     background-position: center;
     background-size: cover;
     opacity: 0.6;
 }
 
-.works .photo:hover {
+.gallery .photo:hover {
     opacity: 1;
     transition: opacity 0.3s linear;
 }
 
-/*.works .text {
+/*.gallery .text {
     display: block;
     width: auto;
     height: 250px;
@@ -373,17 +373,17 @@ header {
     text-align: start;
 }
 
-.works .text:hover {
+.gallery .text:hover {
     opacity: 0;
     transition: opacity 0.3s linear;
 }
 
-.works h3 {
+.gallery h3 {
     margin: 0;
     font-size: 18px;
 }
 
-.works p {
+.gallery p {
     margin: 0;
     font-size: 14px;
 }*/
@@ -410,7 +410,7 @@ header {
 }
 
 @media (min-width: 1000px) {
-    .works article {
+    .gallery article {
         flex: 1 1 25%;
     }
 }
@@ -418,7 +418,7 @@ header {
 
 
 
-/*--- works ---*/
+/*--- gallery ---*/
 
 
 .skills {
