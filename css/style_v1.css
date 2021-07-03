@@ -50,6 +50,10 @@ header {
 
 
 /* header menu */
+.wrapper {
+    background-color: rgba(0,0,0,0.1);
+}
+
 .wrapper::before {
     content: '';
     display: block;
