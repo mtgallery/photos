@@ -728,7 +728,7 @@ header {
 	transition: .8s;
 }
 
-.list ul.school-log {
+.list ul.log {
     padding-right: 40px;
     list-style: none;
     display: inline-block;
