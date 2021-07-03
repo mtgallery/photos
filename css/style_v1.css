@@ -461,11 +461,13 @@ header {
 
 
 .contact{
+    background-color: #fff;
+    color: #252525;
     padding: 40px 0;
 }
 
 .contact-form{
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -484,7 +486,7 @@ header {
 
 .contact-form input[placeholder=NAME],
 .contact-form textarea {
-    color: #fff;
+    color: #252525;
 }
 
 .contact-form input[type=text]:focus,
@@ -494,6 +496,8 @@ header {
 
 .contact-form textarea{
     height: 150px;
+    max-height: 300px;
+    resize: vertical;
 }
 
 .contact-form input[type=submit]{
@@ -501,10 +505,10 @@ header {
     width: 50%;
     margin: 40px auto 0;
     padding: 15px;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(0,0,0,0.6);
     border-radius: 5px;
     background-color: transparent;
-    color: rgba(255,255,255,0.6);
+    color: rgba(0,0,0,0.8);
     cursor: pointer;
 }
 
@@ -518,6 +522,16 @@ header {
 
 
 /*--- footer sns-icon ---*/
+.footer {
+    background-color: #fff;
+    color: #252525;
+}
+
+.footer p {
+    margin: 0;
+    padding: 2% 0;
+}
+
 .foot-sns ul {
     display: flex;
     justify-content: center;
@@ -539,6 +553,7 @@ header {
     font-size: 24px;
     text-decoration: none;
     text-align: center;
+    color: #252525;
 }
 
 .foot-sns i {
@@ -576,13 +591,9 @@ header {
         font-size: 1.3rem;
     }
 
-    a:link, a:visited,
-    a:hover, a:active {
-        color: #fff;
-    }
-
     .main {
-        padding: 100px 30px 70px;
+        padding: 20vh 12vw;
+        min-height: 100vh;
     }
 
     .toggle {
@@ -687,8 +698,22 @@ header {
         font-size: 16px;
     }
 
+    .foot-sns i:hover {
+        background-color: #fff;
+    }
+
     .footer p {
         font-size: 12px;
+    }
+
+    .foot-sns a.twitter-color {
+        color: #00a8e8;
+    }
+    .foot-sns a.facebook-color {
+        color: #445FAC;
+    }
+    .foot-sns a.behance-color {
+        color: #1769ff;
     }
 
     .site-description {
