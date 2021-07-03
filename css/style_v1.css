@@ -246,7 +246,8 @@ header {
 
 
 .main {
-    padding: 190px 30px 140px;
+    min-height: 100vh;
+    padding: 25vh 0;
 }
 
 
@@ -816,5 +817,9 @@ header {
 
     .list ul.log {
         display: block;
+    }
+
+    .gallery .photo {
+        opacity: 1;
     }
 }
