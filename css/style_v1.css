@@ -361,7 +361,15 @@ header .contents_wrap {
     display: flex;
 }
 
-.gallery a {
+.gallery a:hover {
+    opacity: 0.8;
+}
+
+.gallery .photo {
+    min-height: 250px;
+    background-position: center;
+    background-size: cover;
+
     position: relative;
     flex: 1;
     margin: 5px;
@@ -371,16 +379,6 @@ header .contents_wrap {
     background-color: #252525;
     color: inherit;
     text-decoration: none;
-}
-
-.gallery a:hover {
-    opacity: 0.8;
-}
-
-.gallery .photo {
-    min-height: 250px;
-    background-position: center;
-    background-size: cover;
 }
 
 .gallery .photo:hover {
@@ -636,32 +634,112 @@ header .contents_wrap {
 	}
 }
 
-/* 写真　モーダルウィンドウ */
-#grayDisplay {
+
+
+/*ギャラリー部分レイアウト*/
+
+.bl_galleryImgBlock_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 45px; }
+  @media screen and (max-width: 840px) {
+    .bl_galleryImgBlock_wrapper {
+      margin-bottom: 30px; } }
+
+/*モーダル*/
+.bl_modalBlock {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  /* コンテンツ全てに対して固定的に 1160pxとか指定されているときの対応で、
-  ダサいが!importantつける */
-  max-width: 100% !important;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 100;
+}
+  .js_openModal .bl_modalBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
-#grayDisplay img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  max-width: 90%;
-  max-height: 90%;
-  height: 90%;
-  object-fit: contain;
+.bl_modalBlock_wrapper {
+  position: relative;
+  width: 80vh;
+  height: 64vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+  @media screen and (max-width: 840px) {
+    .bl_modalBlock_wrapper {
+      width: 90%;
+      max-width: 480px;
+  }
+      .bl_modalBlock_wrapper:before {
+        content: "";
+        display: block;
+  }
+}
+
+.bl_modalBlock_closeButton {
+  position: absolute;
+  right: 0;
+  top: -5vh;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  cursor: pointer;
+}
+  .bl_modalBlock_closeButton:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 149%;
+    height: 2px;
+    background-color: #ccc;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  .bl_modalBlock_closeButton:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 149%;
+    height: 2px;
+    background-color: #ccc;
+    -webkit-transform-origin: top right;
+    -ms-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/*スクロール禁止*/
+.js_fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+
+
 
 /* responsive */
 @media (min-width: 768px) {

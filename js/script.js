@@ -30,24 +30,60 @@ $(function(){
 
 
 
-    
 
-      // コース画像モーダル表示イベント
-      $(".photo-item img").click(function () {
-        // まず、クリックした画像の HTML(<img>タグ全体)を#frayDisplay内にコピー
-        $("#grayDisplay").html($(this).prop("outerHTML"));
-        //そして、fadeInで表示する。
-        $("#grayDisplay").fadeIn(200);
-        return false;
+    //モーダル表示時のスクロール無効化処理
+
+    var scrollBlockerFlag;
+    var scrollpos;
+
+    function scrollBlocker(flag){
+      if(flag){
+        scrollpos = $(window).scrollTop();
+        $('body').addClass('js_fixed').css({'top': -scrollpos});
+        scrollBlockerFlag = true;
+      } else {
+        $('body').removeClass('js_fixed').css({'top': 0});
+        window.scrollTo( 0 , scrollpos );
+        scrollBlockerFlag = false;
+      }
+    }
+
+
+    //Galleryのモーダル処理
+    $(function(){
+
+      var focusFlag = false;
+
+      $(document).on('click','.js_modalButton',function(){
+        var imgurl = $(this).data('src');
+        $('.bl_modalBlock_wrapper').css('background-image','url(' + imgurl + ')');
+        $('body').addClass('js_openModal');
+        scrollBlocker(true);
+        setTimeout(function(){
+          focusFlag = true;
+        },200);
+      });
+      $(document).on('click','.js_modalButton_close',function(){
+        $('body').removeClass('js_openModal');
+        scrollBlocker(false);
+        focusFlag = false;
       });
 
-      // コース画像モーダル非表示イベント
-      // モーダル画像背景 または 拡大画像そのものをクリックで発火
-      $("#grayDisplay").click(function () {
-        // 非表示にする
-        $("#grayDisplay").fadeOut(200);
-        return false;
+      $(document).on('click','.bl_modalBlock_closeButton',function(){
+        $('body').removeClass('js_openModal');
+        scrollBlocker(false);
+        focusFlag = false;
       });
+
+      //モーダル以外の部分がクリックされた場合にモーダルを閉じる処理
+      $(document).on('click touchend', function(event) {
+        if (!$(event.target).closest('.bl_modalBlock_wrapper').length && focusFlag) {
+          focusFlag = false;
+          scrollBlocker(false);
+          $('body').removeClass('js_openModal');
+        }
+      });
+    });
 
 
 });
