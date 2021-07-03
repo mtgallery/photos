@@ -51,12 +51,12 @@ header {
 
 /* header menu */
 .wrapper {
-    background: #f9f9f9 url('../images/bg01.jpg') no-repeat fixed center center;
-    background-position: 23% -23vh;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: #f9f9f9 url(../images/bg01.jpg) no-repeat;
+    background-position: 23% -34vh;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
 }
 
 .wrapper.bgFull {
@@ -670,12 +670,7 @@ header {
     }
 
     .wrapper {
-        background: #f9f9f9 url('../images/bg01.jpg') no-repeat fixed center center;
-        background-position: 23% 0vh;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        background-position: 26.5% -47vh;
     }
 
     .main {
