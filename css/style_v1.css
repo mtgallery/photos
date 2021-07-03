@@ -373,11 +373,14 @@ header .contents_wrap {
     text-decoration: none;
 }
 
+.gallery a:hover {
+    opacity: 0.8;
+}
+
 .gallery .photo {
     min-height: 250px;
     background-position: center;
     background-size: cover;
-    opacity: 0.6;
 }
 
 .gallery .photo:hover {
@@ -427,6 +430,7 @@ header .contents_wrap {
     border-radius: 5px;
     font-size: 16px;
     opacity: 1;
+    text-decoration: none;
 }
 
 #loadmore:hover {
@@ -632,6 +636,33 @@ header .contents_wrap {
 	}
 }
 
+/* 写真　モーダルウィンドウ */
+#grayDisplay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* コンテンツ全てに対して固定的に 1160pxとか指定されているときの対応で、
+  ダサいが!importantつける */
+  max-width: 100% !important;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#grayDisplay img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
 /* responsive */
 @media (min-width: 768px) {
     /* 大きな画面用の設定 */
@@ -739,6 +770,7 @@ header .contents_wrap {
         font-size: 12px;
         border: solid 1px #aaa;
         border-radius: 5px;
+
     }
 
     .contact-form{

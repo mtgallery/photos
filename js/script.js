@@ -1,8 +1,6 @@
 //DOMを読み込んだら
 $(function(){
 
-    console.log('DOMを読み込んだよ');
-
     // .pagetopのaをクリックしたら
     $('.pagetop a').on('click', function(evt){
         evt.preventDefault();//イベントの停止
@@ -16,37 +14,40 @@ $(function(){
 
     // header ul li a をクリックしたら
     $('.contents-bar a, .full-nav a').on('click', function(evt){
-        console.log('クリックしたよ');
         evt.preventDefault();
 
 
         //1 リンク先の変数を付ける
         var targetName = $(this).attr('href');
-        console.log(targetName);
 
         //2 targetNameの座標を保存する変数を作る
         var targetPos = $(targetName).offset().top; //offset 2つの値が仕様 object {top left}
-        console.log(targetPos);
 
         // $('html, body').animate({scrollTop:targetPos - 70},1000);
         $('html, body').animate({scrollTop:targetPos - 70},{duration:1000, easing:'easeOutQuad', complete:callBack});
 
     });
 
-    function callBack(){
-        console.log('アニメーション終わったよ');
-    }
 
 
+    
 
-    // スクロール中のイベントについて
-    $(window).scroll(function(){
+      // コース画像モーダル表示イベント
+      $(".photo-item img").click(function () {
+        // まず、クリックした画像の HTML(<img>タグ全体)を#frayDisplay内にコピー
+        $("#grayDisplay").html($(this).prop("outerHTML"));
+        //そして、fadeInで表示する。
+        $("#grayDisplay").fadeIn(200);
+        return false;
+      });
 
-        //スクロール値をとる
-        var dy = $(this).scrollTop();
+      // コース画像モーダル非表示イベント
+      // モーダル画像背景 または 拡大画像そのものをクリックで発火
+      $("#grayDisplay").click(function () {
+        // 非表示にする
+        $("#grayDisplay").fadeOut(200);
+        return false;
+      });
 
-        console.log(dy);
-
-    });
 
 });
