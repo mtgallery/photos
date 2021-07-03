@@ -489,10 +489,10 @@ header {
     color: #252525;
 }
 
-/* .contact-form input[type=text]:focus,
+.contact-form input[type=text]:focus,
 .contact-form textarea:focus{
     box-shadow: 0 0 8px rgba(255,255,255,0.5) inset;
-} */
+}
 
 .contact-form textarea{
     height: 150px;
@@ -592,7 +592,7 @@ header {
     }
 
     .main {
-        padding: 10vh 12vw 20vh;
+        padding: 30% 12vw 28%;
         max-height: 100vh;
     }
 
