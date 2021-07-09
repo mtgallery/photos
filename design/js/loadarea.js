@@ -2,7 +2,7 @@ $(function(){
     var $setArea = $('#loadarea'),
     $setMore = $('#loadmore01'),
     loadNum = 5,
-    maxNum = 10;
+    maxNum = 9;
 
     $setMore.click(function(){
         var childLengh = $setArea.children('div').length;
