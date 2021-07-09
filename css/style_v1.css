@@ -431,7 +431,7 @@ header .contents_wrap {
     line-height: 50px;
     display: block;
     color: #252525;
-    background: #fff;
+    /* background: #fff; */
     border: solid 1px #aaa;
     border-radius: 5px;
     font-size: 16px;
@@ -440,7 +440,8 @@ header .contents_wrap {
 }
 
 .loadmore:hover {
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    opacity: 1;
     transition: opacity 0.3s linear;
 }
 
