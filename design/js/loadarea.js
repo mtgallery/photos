@@ -1,6 +1,6 @@
 $(function(){
     var $setArea = $('#loadarea'),
-    $setMore = $('#loadmore.load01'),
+    $setMore = $('#loadmore01'),
     loadNum = 5,
     maxNum = 10;
 
