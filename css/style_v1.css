@@ -80,6 +80,13 @@ header .contents_wrap {
     width: 100%;
     height: 100vh;
 }
+.wrapper.bg::before {
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+}
 .screen li:nth-child(1) {
     background-position: 0px 100%;
     height: 100vh;
