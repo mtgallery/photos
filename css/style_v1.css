@@ -67,7 +67,7 @@ header .contents_wrap {
 .wrapper::before {
     content: '';
     display: block;
-    background: #f9f9f9 url(https://mtgallery.github.io/photos/images/bg01.jpg) no-repeat;
+    background: #f9f9f9 url(https://mtgallery.github.io/portfolio/images/bg01.jpg) no-repeat;
     position: fixed;
     z-index: -1;
     background-position: 0px 100%;
@@ -707,21 +707,21 @@ header .contents_wrap {
       animation: anime 40s linear 0s infinite ;
   }
   .screen li:nth-child(1) {
-      background-image: url(https://mtgallery.github.io/photos/images/gallery/img10.jpg)   /* 背景画像を入力して下さい */
+      background-image: url(https://mtgallery.github.io/portfolio/images/gallery/img10.jpg)   /* 背景画像を入力して下さい */
   }
   .screen li:nth-child(2) {
-      background-image: url(https://mtgallery.github.io/photos/images/gallery/img2.jpg);
+      background-image: url(https://mtgallery.github.io/portfolio/images/gallery/img2.jpg);
       -webkit-animation-delay: 10s;
       animation-delay: 10s;
   }
   .screen li:nth-child(3) {
-      background-image: url(https://mtgallery.github.io/photos/images/gallery/img12.jpg);
+      background-image: url(https://mtgallery.github.io/portfolio/images/gallery/img12.jpg);
       background-position: 0px 100%;
       -webkit-animation-delay: 20s;
       animation-delay: 20s;
   }
   .screen li:nth-child(4) {
-      background-image: url(https://mtgallery.github.io/photos/images/gallery/img5.jpg);
+      background-image: url(https://mtgallery.github.io/portfolio/images/gallery/img5.jpg);
       -webkit-animation-delay: 30s;
       animation-delay: 30s;
   }
