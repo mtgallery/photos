@@ -80,13 +80,7 @@ header .contents_wrap {
     width: 100%;
     height: 100vh;
 }
-.wrapper.bg::before {
-    content: '';
-    display: block;
-    background-color: #fff;
-    width: 100%;
-    height: 100vh;
-}
+
 .screen li:nth-child(1) {
     background-position: 0px 100%;
     height: 100vh;
@@ -432,7 +426,7 @@ header .contents_wrap {
 /* #loadarea
 --------------------------- */
 .loadmore {
-    margin: 60px auto;
+    margin: 30px auto;
     width: 200px;
     height: 50px;
     line-height: 50px;
@@ -853,6 +847,10 @@ header .contents_wrap {
     .site-title {
         margin-top: 35px;
         font-size: 5em;
+    }
+
+    h1 {
+        padding-top: 10%;
     }
 
     .site-description {
