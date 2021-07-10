@@ -22,7 +22,7 @@ $(function(){
           $('body,html').stop().animate({scrollTop:position}, 1000);
         }, 100);
       }
-      $('a[href^=#]').click(function(){
+      $('.contents-bar a[href^="#"], .full-nav a[href^="#"]').click(function(){
         var href= $(this).attr("href");
         var target = $(href);
         var position = target.offset().top - headerHeight;
