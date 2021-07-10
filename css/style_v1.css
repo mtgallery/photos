@@ -578,6 +578,10 @@ header .contents_wrap {
 }
 
 
+.gallery_link {
+    width: 100%;
+    height: auto;
+}
 
 /*ギャラリー部分レイアウト*/
 
