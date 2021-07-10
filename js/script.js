@@ -2,14 +2,6 @@
 $(function(){
 
 
-    // .pagetopのaをクリックしたら
-    $('.pagetop a').on('click', function(evt){
-        evt.preventDefault();//イベントの停止
-
-        //ページ全体を一番上にスクロールされる
-        $('html, body').animate({scrollTop:0},1000,function(){
-        });
-    });
 
 
     $('.contents-bar a[href^="#"], .full-nav a[href^="#"]').click(function () {
