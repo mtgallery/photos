@@ -1,5 +1,5 @@
 $(function(){
-    var $setArea = $('.load_area'),
+    var $setArea = $('#load_area'),
     $setMore = $('#loadmore01'),
     loadNum = 5,
     maxNum = 9;
@@ -25,7 +25,7 @@ $(function(){
 });
 
 $(function(){
-    var $setArea = $('.load_area'),
+    var $setArea = $('#load_area'),
     $setMore = $('#loadmore02'),
     loadNum = 5,
     maxNum = 9;
