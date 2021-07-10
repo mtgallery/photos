@@ -11,15 +11,12 @@ $(function(){
         });
     });
 
-    $(function(){
-      $('.contents-bar a[href^="#"], .full-nav a[href^="#"]').click(function(){
-        // let speed = 500;
-        let href= $(this).attr("href");
-        let target = $(href == "#" || href == "" ? 'html' : href);
-        let position = target.offset().top-70;
-        $("html, body").animate({scrollTop:position,1000);
-        return false;
-      });
+
+    $('.contents-bar a[href^="#"], .full-nav a[href^="#"]').click(function () {
+      var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+      var pos = $(elmHash).offset().top-70;//idの上部の距離からHeaderの高さを引いた値を取得
+      $('body,html').animate({scrollTop: pos}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+      return false;
     });
 
     // // header ul li a をクリックしたら
