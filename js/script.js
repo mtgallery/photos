@@ -18,7 +18,6 @@ $(function(){
         let target = $(href == "#" || href == "" ? 'html' : href);
         let position = target.offset().top - 70;
         $("html, body").animate({scrollTop:position,1000);
-        $('html, body').animate({scrollTop:position,{duration:1000, easing:'easeOutQuad'});
         return false;
       });
     });
