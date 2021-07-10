@@ -913,7 +913,7 @@ header .contents_wrap {
         opacity: 1;
     }
 
-    .gallery .photo.bnr01 {
+    .gallery .bnr01 .photo {
         width: 100%;
         background-position: center;
         background-size: contain;
