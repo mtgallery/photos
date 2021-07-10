@@ -389,6 +389,14 @@ header .contents_wrap {
     color: inherit;
     text-decoration: none;
 }
+.gallery .bnr01 {
+    min-height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-color: none;
+}
 
 .gallery .photo:hover {
     opacity: 1;
