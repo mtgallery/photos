@@ -924,12 +924,12 @@ header .contents_wrap {
         background-repeat: no-repeat;
     }
 
-    .gallery .bnr01 .photo {
+    .gallery .bnr01 .photo,
+    .gallery .bnr03 .photo {
         min-height: 210px;
     }
 
-    .gallery .bnr02 .photo,
-    .gallery .bnr03 .photo{
+    .gallery .bnr02 .photo{
         min-height: 200px;
     }
 }
