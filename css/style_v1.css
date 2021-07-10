@@ -271,6 +271,7 @@ header .contents_wrap {
 
 
 .site-title-sub {
+    padding-top: 100px;
     margin: 0 0 30px;
     letter-spacing: 1px;
     font-size: 3.5rem;
@@ -915,6 +916,12 @@ header .contents_wrap {
     }
 
     .gallery .bnr01 .photo {
+        min-height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .gallery .bnr02 .photo {
         min-height: 200px;
         background-size: contain;
         background-repeat: no-repeat;
