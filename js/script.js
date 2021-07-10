@@ -1,6 +1,16 @@
 //DOMを読み込んだら
 $(function(){
 
+
+    // .pagetopのaをクリックしたら
+    $('.pagetop a').on('click', function(evt){
+        evt.preventDefault();//イベントの停止
+
+        //ページ全体を一番上にスクロールされる
+        $('html, body').animate({scrollTop:0},1000,function(){
+        });
+    });
+
     // header ul li a をクリックしたら
     $('.contents-bar a, .full-nav a').on('click', function(evt){
         evt.preventDefault();
