@@ -2,15 +2,32 @@
 $(function(){
 
 
+    // .pagetopのaをクリックしたら
+    $('.pagetop a').on('click', function(evt){
+        evt.preventDefault();//イベントの停止
 
-
-    $('.contents-bar a[href^="#"], .full-nav a[href^="#"]').click(function () {
-      var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
-      var pos = $(elmHash).offset().top-70;//idの上部の距離からHeaderの高さを引いた値を取得
-      $('body,html').animate({scrollTop: pos}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
-      return false;
+        //ページ全体を一番上にスクロールされる
+        $('html, body').animate({scrollTop:0},1000,function(){
+        });
     });
 
+
+    var headerHeight = $('header .contents_wrap').outerHeight();
+    var urlHash = location.hash;
+    if(urlHash) {
+        $('body,html').stop().scrollTop(0);
+        setTimeout(function(){
+            var target = $(urlHash);
+            var position = target.offset().top - headerHeight;
+            $('body,html').stop().animate({scrollTop:position}, 1000);
+        }, 100);
+    }
+    $('.contents-bar a[href^="#"], .full-nav a[href^="#"]').click(function() {
+        var href= $(this).attr("href");
+        var target = $(href);
+        var position = target.offset().top - headerHeight;
+        $('body,html').stop().animate({scrollTop:position}, 1000);
+    });
 
 
 
