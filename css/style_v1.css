@@ -933,4 +933,24 @@ header .contents_wrap {
     .gallery .bnr02 .photo{
         min-height: 200px;
     }
+
+    .gallery .bnr04 .photo{
+        min-height: 220px;
+    }
+    .gallery .bnr04 .photo:nth-child(1){
+        min-height: 190px;
+    }
+    .gallery .bnr04 .photo:nth-child(3),
+    .gallery .bnr04 .photo:nth-child(4),
+    .gallery .bnr04 .photo:nth-child(5),
+    .gallery .bnr04 .photo:nth-child(6),
+    .gallery .bnr04 .photo:nth-child(7) {
+        min-height: 100px;
+    }
+    .gallery .bnr04 .photo:nth-child(8),
+    .gallery .bnr04 .photo:nth-child(9),
+    .gallery .bnr04 .photo:nth-child(10),
+    .gallery .bnr04 .photo:nth-child(11) {
+        min-height: 150px;
+    }
 }
