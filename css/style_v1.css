@@ -271,10 +271,12 @@ header .contents_wrap {
 
 
 .site-title-sub {
-    padding-top: 100px;
     margin: 0 0 30px;
     letter-spacing: 1px;
     font-size: 3.5rem;
+}
+.ttl.site-title-sub {
+    padding-top: 100px;
 }
 
 .site-title-sub::before,
