@@ -85,9 +85,6 @@ header .contents_wrap {
     background-position: 0px 100%;
     height: 100vh;
 }
-.screen li:nth-child(4) {
-    background-position: 35% -80vh;
-}
 
 .wrapper.bgFull {
     background-color: rgba(0, 0, 0, 0.6);
@@ -724,7 +721,7 @@ header .contents_wrap {
       animation-delay: 20s;
   }
   .screen li:nth-child(4) {
-      background-image: url(https://mtgallery.github.io/portfolio/images/gallery/img5.jpg);
+      background-image: url(https://mtgallery.github.io/portfolio/images/gallery/img3.jpg);
       -webkit-animation-delay: 30s;
       animation-delay: 30s;
   }
@@ -806,7 +803,7 @@ header .contents_wrap {
         background-position: 48% 0;
     }
     .screen li:nth-child(4) {
-        background-position: 35% 0;
+        background-position: 20% 0;
     }
 
     .main {
