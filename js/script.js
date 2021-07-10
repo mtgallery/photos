@@ -13,19 +13,17 @@ $(function(){
 
     // header ul li a をクリックしたら
     $('.contents-bar a, .full-nav a').on('click', function(evt){
-        
+
 
 
         //1 リンク先の変数を付ける
         var targetName = $(this).attr('href');
-        console.log(targetName);
 
         //2 targetNameの座標を保存する変数を作る
         var targetPos = $(targetName).offset().top; //offset 2つの値が仕様 object {top left}
-        console.log(targetPos);
 
         // $('html, body').animate({scrollTop:targetPos - 70},1000);
-        $('html, body').animate({scrollTop:targetPos - 70},{duration:1000, easing:'easeOutQuad', complete:callBack});
+        $('html, body').animate({scrollTop:targetPos - 70},{duration:1000, easing:'easeOutQuad'});
 
     });
 
