@@ -915,15 +915,17 @@ header .contents_wrap {
         opacity: 1;
     }
 
-    .gallery .bnr01 .photo {
-        min-height: 200px;
+    .gallery .bnr01 .photo,
+    .gallery .bnr02 .photo {
         background-size: contain;
         background-repeat: no-repeat;
     }
 
+    .gallery .bnr01 .photo {
+        min-height: 210px;
+    }
+
     .gallery .bnr02 .photo {
         min-height: 200px;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
 }
