@@ -16,9 +16,9 @@ $(function(){
         // let speed = 500;
         let href= $(this).attr("href");
         let target = $(href == "#" || href == "" ? 'html' : href);
-        let position = target.offset().top;
-        $("html, body").animate({scrollTop:position - 70},1000);
-        $('html, body').animate({scrollTop:position - 70},{duration:1000, easing:'easeOutQuad'});
+        let position = target.offset().top - 70;
+        $("html, body").animate({scrollTop:position,1000);
+        $('html, body').animate({scrollTop:position,{duration:1000, easing:'easeOutQuad'});
         return false;
       });
     });
