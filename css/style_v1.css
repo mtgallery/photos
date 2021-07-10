@@ -385,7 +385,7 @@ header .contents_wrap {
     display: block;
     border: solid 1px #ddd;
     border: solid 1px var(--gray-color);
-    background-color: #252525;
+    /* background-color: #252525; */
     color: inherit;
     text-decoration: none;
 }
@@ -914,11 +914,8 @@ header .contents_wrap {
     }
 
     .gallery .bnr01 .photo {
-        width: 100%;
-        background-position: center;
+        min-height: 200px;
         background-size: contain;
         background-repeat: no-repeat;
-
-        background-color: none;
     }
 }
