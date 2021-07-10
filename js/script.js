@@ -13,7 +13,7 @@ $(function(){
 
     // header ul li a をクリックしたら
     $('.contents-bar a, .full-nav a').on('click', function(evt){
-
+        evt.preventDefault();
 
 
         //1 リンク先の変数を付ける
@@ -23,7 +23,7 @@ $(function(){
         var targetPos = $(targetName).offset().top; //offset 2つの値が仕様 object {top left}
 
         // $('html, body').animate({scrollTop:targetPos - 70},1000);
-        $('html, body').animate({scrollTop:targetPos - 70},{duration:1000, easing:'easeOutQuad'});
+        $('html, body').animate({scrollTop:targetPos - 70},{duration:1000, easing:'easeOutQuad', complete:callBack});
 
     });
 
