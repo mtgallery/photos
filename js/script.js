@@ -13,7 +13,7 @@ $(function(){
 
     // header ul li a をクリックしたら
     $('.contents-bar a, .full-nav a').on('click', function(evt){
-        evt.preventDefault();
+        
 
 
         //1 リンク先の変数を付ける
