@@ -916,7 +916,8 @@ header .contents_wrap {
     }
 
     .gallery .bnr01 .photo,
-    .gallery .bnr02 .photo {
+    .gallery .bnr02 .photo,
+    .gallery .bnr03 .photo {
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -925,7 +926,8 @@ header .contents_wrap {
         min-height: 210px;
     }
 
-    .gallery .bnr02 .photo {
+    .gallery .bnr02 .photo,
+    .gallery .bnr03 .photo{
         min-height: 200px;
     }
 }
