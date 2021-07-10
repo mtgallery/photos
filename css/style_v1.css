@@ -516,6 +516,9 @@ header .contents_wrap {
     display: inline-block;
     text-align: center;
 }
+.list ul.log.txt_l {
+    text-align: left;
+}
 
 .list-mv07{
 	opacity: 0;
